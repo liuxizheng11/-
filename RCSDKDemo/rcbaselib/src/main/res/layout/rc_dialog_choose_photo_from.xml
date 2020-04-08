@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_choose_photo_from_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/dialog_choose_photo_from_camera"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/rc_camera"
+            android:textColor="@color/rc_text_color"
+            android:textSize="@dimen/rc_text_size" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#c8c8c8" />
+
+        <TextView
+            android:id="@+id/dialog_choose_photo_from_phonelist"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/rc_phonelist"
+            android:textColor="@color/rc_text_color"
+            android:textSize="@dimen/rc_text_size" />
+
+
+        <TextView
+            android:id="@+id/dialog_choose_photo_from_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="?attr/RCDarkColor"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/rc_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rocedar.deviceplatform">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <!-- 蓝牙 运行需要的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <service android:name=".device.bluetooth.ble.BluetoothLeService" />
+        <!-- 博之轮血压测量页 -->
+        <activity
+            android:name=".app.measure.BZLBloodMeasureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- 37血压测量页 -->
+        <activity
+            android:name=".app.measure.BloodPressure37Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- 设备类型列表 -->
+        <activity
+            android:name=".app.devicelist.DeviceChooseListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- 蓝牙扫描页面 -->
+        <activity
+            android:name=".app.binding.bluetooth.RCBluetoothScanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- SN 页面 -->
+        <activity
+            android:name=".app.binding.sn.RCSnNumberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- wifi 页面 -->
+        <activity
+            android:name=".app.binding.wifi.WifiBindingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 数据来源/我的设备 页面 -->
+        <activity
+            android:name=".app.devicelist.DeviceFunctionListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!--  -->
+        <activity
+            android:name=".app.binding.oauth.OAuth2BindingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <activity
+            android:name=".app.questionnaire.HealthHistoryQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+
+        <!-- 家庭医生 -->
+        <activity
+            android:name=".app.familydoctor.FamilyDoctorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- 家庭医生咨询记录详情页 -->
+        <activity
+            android:name=".app.familydoctor.FamilyDoctorRecordDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- 家庭医生医生详情 -->
+        <activity
+            android:name=".app.familydoctor.FamilyDoctorIntroducedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+
+        <activity
+            android:name=".app.IPActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <activity android:name=".device.bluetooth.impl.RCBluetoothImplTest" />
+        <!--家庭医生评价页-->
+        <activity
+            android:name=".app.familydoctor.FamilyDoctorEvaluateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 高血压专题 -->
+        <activity
+            android:name="com.rocedar.deviceplatform.app.highbloodpressure.HighBloodPressureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- 高血压大数据联合实验室&瑰柏科技 -->
+        <activity
+            android:name="com.rocedar.deviceplatform.app.highbloodpressure.HBPDetailsIntroduceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!-- 专家介绍 -->
+        <activity
+            android:name="com.rocedar.deviceplatform.app.highbloodpressure.HBPProfessorIntroduceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack" />
+        <!--咨询专家组-->
+        <activity
+            android:name="com.rocedar.deviceplatform.app.highbloodpressure.HBPConsultProfessorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSwipeBack"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <service
+            android:name="com.yc.peddemo.sdk.BluetoothLeService"
+            android:enabled="true" />
+        <service android:name="com.realsil.android.blehub.dfu.DfuService" />
+        <service android:name=".app.measure.mbb.BluetoothService" />
+
+        <meta-data
+            android:name="YCAPPKEY"
+            android:value="f0b520cdb42c7103f6683977793ae81c" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,346 @@
+{
+  "questionnaire": [
+    {
+      "group_id": 0,
+      "group_name": "",
+      "topics": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+      ]
+    }
+  ],
+  "topics": {
+    "1": {
+      "topic_name": "经常连续坐着办公90分钟以上？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "是",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "否",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    },
+    "2": {
+      "topic_name": "每周平均0点以后睡觉次数？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "0次",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "1～2次",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "3～7次",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "3": {
+      "topic_name": "每天平均睡眠小时数？",
+      "type_id": 3,
+      "options": [
+      ],
+      "answer_template": "每天平均睡眠<value>小时"
+    },
+    "4": {
+      "topic_name": "睡眠状态（可多选）",
+      "type_id": 2,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "入睡困难",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "借助安眠药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "午睡习惯",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "多梦",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "容易惊醒",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "经常熬夜",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "自觉睡眠良好",
+          "child_topic": ""
+        } 
+      ],
+      "answer_template": "<value>。"
+    },
+    "5": {
+      "topic_name": "吸烟习惯",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "偶尔吸烟",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "不吸烟",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "每天少于1包",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "每天1包以上",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "6": {
+      "topic_name": "烟龄",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "小于3年",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "3～10年",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "10年以上",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "7": {
+      "topic_name": "每周锻炼天数？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "不运动",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "1～2天",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "3～5天",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "5～7天",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "8": {
+      "topic_name": "每次锻炼时间",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "20分钟以内",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "20～30分钟",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "30分钟～1小时",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "1小时以上",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "9": {
+      "topic_name": "吃早餐习惯？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "固定早餐",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "早餐不规律",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "从不吃早餐",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "10": {
+      "topic_name": "三餐规律情况？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "很规律",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "基本规律",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "不规律",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "11": {
+      "topic_name": "每天饮水量（每杯250ml）？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "1～4杯",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "4～6杯",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "6～8杯",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "8杯以上",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "12": {
+      "topic_name": "吃蔬菜情况？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "每餐必吃",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "每天吃一点",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "基本不吃",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "13": {
+      "topic_name": "吃水果情况？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "每天吃很多",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "每天吃一点",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "基本不吃",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "14": {
+      "topic_name": "饮酒频率？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "基本不饮酒",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "间或饮酒",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "每日必饮酒",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "常醉酒",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    }
+  }
+}

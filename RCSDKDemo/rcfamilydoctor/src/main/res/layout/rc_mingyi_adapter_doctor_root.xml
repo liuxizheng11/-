@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rc_mingyi_adapter_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rc_mingyi_adapter_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="sadsadsadsa"
+        android:textColor="#666666"
+        android:textSize="13dp" />
+
+    <View
+        android:id="@+id/rc_mingyi_adapter_view"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="?attr/RCDarkColor" />
+
+</LinearLayout>

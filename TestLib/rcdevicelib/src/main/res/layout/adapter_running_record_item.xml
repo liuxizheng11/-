@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/adapter_runing_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adapter_runing_invalid"
+            android:layout_width="35dp"
+            android:layout_height="23dp"
+            android:background="#aaaaaa"
+            android:gravity="center"
+            android:text="@string/rcdevice_record_invalid"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/fragment_record_line" />
+
+        <TextView
+            android:id="@+id/adapter_runing_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_runing_invalid"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/adapter_runing_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_runing_invalid"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/adapter_runing_start_time"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/adapter_runing_km_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_runing_start_time"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/adapter_runing_duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_runing_start_time"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/adapter_runing_km_number"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/adapter_runing_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_runing_start_time"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/adapter_runing_duration_time"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/fragment_record_line" />
+
+        <TextView
+            android:id="@+id/adapter_runing_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="11dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="11dp" />
+    </RelativeLayout>
+</LinearLayout>

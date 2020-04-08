@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app主颜色，用于与主颜色相关的背景、文字等-->
+    <color name="rcbase_app_main">#1e92ff</color>
+    <!--<color name="rcbase_app_main">#00d755</color>-->
+
+    <!--app主体颜色，如导航栏，按钮背景色-->
+    <color name="rcbase_app_main_btn">#1e92ff</color>
+    <!--<color name="rcbase_app_main_btn">#404558</color>-->
+    <!-- 用于按钮点击后的焦点颜色-->
+    <color name="rcbase_app_button_focus">#0b8fff</color>
+    <!--<color name="rcbase_app_button_focus">#00b755</color>-->
+
+
+
+    <!-- 用于没有焦点的按钮颜色-->
+    <color name="rcbase_app_button_no_focus">#CCCCCC</color>
+
+    <!-- 用于文字的默认颜色-->
+    <color name="rcbase_app_text_default">#333333</color>
+    <color name="rcbase_app_text_default_666">#666666</color>
+    <color name="rcbase_app_text_default_999">#999999</color>
+
+    <!-- 用于线的默认颜色-->
+    <color name="rcbase_app_line_default">#f3f4f9</color>
+    <!--<color name="rcbase_app_line_default">#f3f3f4</color>-->
+
+    <!-- 用于家庭医生progressbar背景颜色-->
+    <color name="rcbase_app_progressbar_bg">#dcecff</color>
+    <!--<color name="rcbase_app_progressbar_bg">#dcecff</color>-->
+
+    <dimen name="rcbase_app_bg_radius">0dp</dimen>
+    <!--<dimen name="rcbase_app_bg_radius">1.67dp</dimen>-->
+    
+</resources>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rocedar.lib.base.view.CircleImageView
+                    android:id="@+id/rc_my_order_particulars_head"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="23dp"
+                    app:border_color="#ccc"
+                    app:border_width="1px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_toRightOf="@+id/rc_my_order_particulars_head"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/rc_my_order_particulars_doctor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/rc_text_color"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/rc_order_particulars_hospital_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/rc_order_particulars_division_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/rc_order_particulars_consult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666666"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginTop="21dp"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_my_order_number"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/rc_order_particulars_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_patient_message"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/rc_order_particulars_patient_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/rc_order_particulars_subscribe_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_subscribe_time"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/rc_order_particulars_subscribe_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/rc_order_particulars_money_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/rc_order_particulars_money"
+                    android:text="@string/rc_my_order_money"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/rc_order_particulars_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:id="@+id/rc_order_particulars_rc_perfect_message_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/rc_perfect_message"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/rc_arrow_right" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/rc_order_particulars_go_pay"
+                android:layout_width="102dp"
+                android:layout_height="37dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="去支付"
+                android:textColor="@color/rc_white"
+                android:textSize="14dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/rc_line" />
+
+            <com.rocedar.lib.base.view.RCListViewForScrollView
+                android:id="@+id/rc_order_particulars_listview"
+                style="@style/RC_Base_ListViewTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

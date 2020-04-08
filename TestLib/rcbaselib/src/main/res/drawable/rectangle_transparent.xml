@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_enabled="false">
+        <color android:color="#0f000000"/>
+    </item>
+    <item android:state_pressed="true">
+        <color android:color="#0f000000"/>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+
+</selector>
+    <!-- From: file:/C:/Software/Android/Studio/android-studio-project/HYFramework/framework/src/main/res/drawable/normal_press_transparent.xml -->

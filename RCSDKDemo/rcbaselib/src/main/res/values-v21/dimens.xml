@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="rc_edit_line_padding">10dp</dimen>
+</resources>

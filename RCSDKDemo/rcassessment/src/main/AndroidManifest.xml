@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rocedar.sdk.assessment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".RCAssessmentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".RCAssessmentListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".RCAssessmentResultActivity"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+
+</manifest>

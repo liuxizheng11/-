@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rc_f_goods_server_card_bottom_layout"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/rc_f_goods_server_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <LinearLayout
+                android:id="@+id/rc_f_goods_server_card_item"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f4f9"
+                android:orientation="vertical"
+                android:paddingBottom="14dp"
+                android:paddingLeft="19dp"
+                android:paddingRight="19dp"
+                android:paddingTop="14dp">
+
+                <LinearLayout
+                    android:id="@+id/rc_f_goods_server_card_server_time_show_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rc_shop_server_time"
+                        android:textColor="@color/rc_text_color_light"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/rc_f_goods_server_card_server_time_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#ff9842"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rc_f_goods_server_card_server_price_show_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rc_shop_price"
+                        android:textColor="@color/rc_text_color_light"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/rc_f_goods_server_card_server_price_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#ff9842"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/rc_f_goods_server_card_server_context_show"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="13dp"-->
+                <!--android:lineSpacingExtra="@dimen/rc_edit_line_padding"-->
+                <!--android:textColor="@color/rc_text_color_light"-->
+                <!--android:textSize="12dp" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/rc_f_goods_server_card_server_context_show_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/rc_f_goods_server_card_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/rc_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rc_f_goods_server_card_bottom_layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/rc_white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/rc_f_goods_server_card_bottom_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:textColor="#f6a23f"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/rc_f_goods_server_card_bottom_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="4dp"
+                android:layout_toRightOf="@+id/rc_f_goods_server_card_bottom_price"
+                android:text="/"
+                android:textColor="@color/rc_text_color_light"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/rc_f_goods_server_card_bottom_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/rc_f_goods_server_card_bottom_temp"
+                android:textColor="@color/rc_text_color_light"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/rc_f_goods_server_card_bottom_pay"
+                android:layout_width="160dp"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="?attr/RCDarkColor"
+                android:gravity="center"
+                android:text="@string/rc_shop_pay_now"
+                android:textColor="@color/rc_white"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rc_f_goods_server_card_bottom_layout_noprice"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/rc_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/rc_f_goods_server_card_bottom_left"
+                android:layout_width="160dp"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="?attr/RCDarkColor"
+                android:gravity="center"
+                android:text="@string/rc_shop_buy_give"
+                android:textColor="@color/rc_white"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/rc_f_goods_server_card_bottom_right"
+                android:layout_width="160dp"
+                android:layout_height="49dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/rc_shop_buy_self"
+                android:textColor="?attr/RCDarkColor"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    <!--头像-->
+    <com.rocedar.deviceplatform.app.view.CircleImageView
+        android:id="@+id/iv_item_doctor_consult_head"
+        android:layout_width="62.5dp"
+        android:layout_height="62.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/white"
+        app:border_color="#ccc"
+        app:border_width="1px" />
+    <!--忙闲-状态-->
+    <ImageView
+        android:id="@+id/iv_item_doctor_consult_status"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/iv_item_doctor_consult_head"
+        android:layout_alignRight="@+id/iv_item_doctor_consult_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_item_doctor_left"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_item_doctor_consult_head">
+        <!--我的医生-->
+        <TextView
+            android:id="@+id/tv_item_doctor_consult_add"
+            android:layout_width="50dp"
+            android:layout_height="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:textColor="@color/rcbase_app_main"
+            android:textSize="9dp" />
+    </RelativeLayout>
+    <!--姓名-->
+    <TextView
+        android:id="@+id/tv_item_doctor_consult_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/rl_item_doctor_left"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textSize="16dp" />
+    <!--职位-->
+    <TextView
+        android:id="@+id/tv_item_doctor_consult_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_item_doctor_consult_name"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/tv_item_doctor_consult_name"
+        android:textColor="@color/rcbase_app_text_default_666"
+        android:textSize="13dp" />
+    <!--科室-医院-->
+    <TextView
+        android:id="@+id/tv_item_doctor_consult_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_doctor_consult_name"
+        android:layout_below="@+id/tv_item_doctor_consult_name"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/rcbase_app_text_default_666"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_item_doctor_consult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/rcdevice_family_doctor_consult_count"
+        android:textColor="@color/main_home_menu_normal"
+        android:textSize="11dp" />
+    <!--咨询次数-->
+    <TextView
+        android:id="@+id/tv_item_doctor_consult_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/tv_item_doctor_consult"
+        android:textColor="@color/rcbase_app_main"
+        android:textSize="11dp" />
+    <!--详情-->
+    <RelativeLayout
+        android:id="@+id/rl_item_doctor_consult_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_doctor_consult_name"
+        android:layout_below="@+id/tv_item_doctor_consult_office"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_item_doctor_consult_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:paddingRight="10dp"
+            android:textColor="@color/main_home_menu_normal"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_item_doctor_consult_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_item_doctor_consult_desc"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@mipmap/ic_develop"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="@string/rcdevice_unfold"
+            android:textColor="@color/main_home_menu_normal"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+
+    <com.rocedar.deviceplatform.app.view.MyRatingBar
+        android:id="@+id/ratingbar_item_doctor_consult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_doctor_consult_name"
+        android:layout_below="@+id/rl_item_doctor_consult_desc"
+        android:layout_gravity="center_horizontal"
+        app:clickable="false"
+        app:halfstart="true"
+        app:starCount="5"
+        app:starEmpty="@mipmap/ic_star_big_gray"
+        app:starFill="@mipmap/ic_star_big_orang"
+        app:starHalf="@mipmap/ic_star_small_half"
+        app:starImageHeight="11dp"
+        app:starImagePadding="2.5dp"
+        app:starImageWidth="11dp" />
+
+    <TextView
+        android:id="@+id/tv_item_doctor_consult_star_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingbar_item_doctor_consult"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/ratingbar_item_doctor_consult"
+        android:gravity="left"
+        android:text="5.0"
+        android:textColor="#ffa820"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/tv_item_doctor_consult_video"
+        android:layout_width="192dp"
+        android:layout_height="31dp"
+        android:layout_alignLeft="@+id/tv_item_doctor_consult_name"
+        android:layout_below="@+id/ratingbar_item_doctor_consult"
+        android:layout_marginTop="9dp"
+        android:background="@color/rcbase_app_main"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="@string/rcdevice_family_doctor_video_consult"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_item_doctor_consult_video"
+        android:layout_marginTop="17dp"
+        android:background="@color/rcbase_app_line_default" />
+</RelativeLayout>

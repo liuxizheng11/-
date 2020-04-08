@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rc_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/rc_adapter_xun_yi_inquiry_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rc_text_color_light"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/rc_adapter_xun_yi_inquiry_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="?attr/RCDarkColor"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/rc_adapter_xun_yi_inquiry_server_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/rc_adapter_xun_yi_inquiry_server"
+            android:textColor="@color/rc_text_color_light"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/rc_line" />
+
+    <TextView
+        android:id="@+id/rc_adapter_xun_yi_inquiry_server_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="end"
+        android:text="asdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadasasdsadas"
+        android:layout_marginLeft="12dp"
+        android:maxLines="2"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/rc_text_color_none"
+        android:textSize="13dp" />
+</LinearLayout>

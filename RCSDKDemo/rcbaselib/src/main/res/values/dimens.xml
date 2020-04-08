@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rc_edit_line_padding">0dp</dimen>
+    <dimen name="rc_text_size">16dp</dimen>
+
+</resources>

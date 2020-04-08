@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_step_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_auto_measure">
+
+        <com.rocedar.deviceplatform.app.view.CircleProgressView
+            android:id="@+id/circle_ring"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_measure" />
+
+        <TextView
+            android:id="@+id/tv_auto_measure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="60dp"
+
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:background="@color/rcbase_white"
+        android:gravity="center"
+        android:text="@string/rcdevice_my_measure_bluetooth_state"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textSize="19dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="@string/rcdevice_my_measure_bluetooth_process"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textSize="19dp" />
+</LinearLayout>

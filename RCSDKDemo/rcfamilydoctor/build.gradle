@@ -1,0 +1,84 @@
+group 'com.rocedar.android.sdk'
+def artifactId = "familydoctor"
+
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.rcsdkCode.familydoctor
+        versionName "$rootProject.ext.rcsdkVersion.familydoctor"
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:' + rootProject.ext.dependVersion.support
+    implementation 'com.android.support:recyclerview-v7:' + rootProject.ext.dependVersion.support
+    implementation 'com.android.support:cardview-v7:' + rootProject.ext.dependVersion.support
+    implementation 'com.android.support:support-v4:' + rootProject.ext.dependVersion.support
+    implementation 'com.android.support:design:' + rootProject.ext.dependVersion.support
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.rocedar.third:wwz:1.0.00'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    if (rootProject.ext.Local.toBoolean()) {
+        compile project(':rcbaselib')
+        implementation 'com.google.code.gson:gson:2.8.5'
+        compile project(':rcshop')
+    } else {
+        if (rootProject.ext.Debug.toBoolean()) {
+            implementation 'com.rocedar.android.sdk:base:' + rootProject.ext.rcsdkDebugVersion.base
+            implementation 'com.rocedar.android.sdk:shop:' + rootProject.ext.rcsdkDebugVersion.shop
+        } else {
+            implementation 'com.rocedar.android.sdk:base:' + rootProject.ext.rcsdkVersion.base
+            implementation 'com.rocedar.android.sdk:shop:' + rootProject.ext.rcsdkVersion.shop
+        }
+    }
+}
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            if (rootProject.ext.Debug.toBoolean()) {
+                repository(url: "http://maven.rocedar.com:18003/nexus/content/repositories/snapshots/") {
+                    authentication(userName: "admin", password: "guiBai_maven")
+                }
+                pom.version = "$rootProject.ext.rcsdkDebugVersion.familydoctor"
+            } else {
+                repository(url: "http://maven.rocedar.com:18003/nexus/content/repositories/releases/") {
+                    authentication(userName: "admin", password: "guiBai_maven")
+                }
+                pom.version = "$rootProject.ext.rcsdkVersion.familydoctor"
+            }
+            pom.artifactId = "$artifactId"
+            pom.groupId = "$project.group"
+        }
+    }
+}

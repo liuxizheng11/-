@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/rcbase_white">
+
+        <ImageView
+            android:id="@+id/sn_list_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/sn_list_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/sn_list_iv"
+            android:gravity="bottom"
+            android:hint="@string/rcdevice_add_attention_hint"
+            android:paddingBottom="2dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/main_home_menu_normal"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/sn_list_scan"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignBottom="@+id/sn_list_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/sn_list_scan"
+            android:layout_toRightOf="@+id/sn_list_iv"
+            android:background="@color/rcbase_app_line_default" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/include_sn_list_item_choose_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/rcbase_white">
+
+        <TextView
+            android:id="@+id/include_sn_list_item_choose_user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="5dp"
+            android:scaleType="centerInside"
+            android:text="@string/rcdevice_select_user_title"
+            android:textColor="@color/rcbase_app_text_default"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/include_sn_list_item_choose_user_title_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/include_sn_list_item_choose_user_title_choose"
+            android:layout_toRightOf="@+id/include_sn_list_item_choose_user_title"
+            android:background="@color/transparent"
+            android:hint="@string/rcdevice_select_user_title_hint"
+            android:padding="5dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/rcbase_app_text_default"
+            android:textColorHint="@color/main_home_menu_normal"
+            android:textSize="13dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/include_sn_list_item_choose_user_title_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:text="去通讯录选择》"
+            android:textColor="@color/rcbase_app_main"
+            android:textSize="13dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignBottom="@+id/include_sn_list_item_choose_user_title"
+            android:layout_marginRight="46dp"
+            android:layout_toRightOf="@+id/include_sn_list_item_choose_user_title"
+            android:background="@color/rcbase_app_line_default" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/include_sn_list_item_choose_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/rcbase_white">
+
+            <TextView
+                android:id="@+id/include_sn_list_item_choose_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="5dp"
+                android:scaleType="centerInside"
+                android:text="@string/rcdevice_device_phone"
+                android:textColor="@color/rcbase_app_text_default"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/include_sn_list_item_choose_user_phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/include_sn_list_item_choose_user_phone_choose"
+                android:layout_toRightOf="@+id/include_sn_list_item_choose_user_phone"
+                android:background="@color/transparent"
+                android:hint="@string/rcdevice_select_user_phone_hint"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/rcbase_app_text_default"
+                android:textColorHint="@color/main_home_menu_normal"
+                android:textSize="13dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/include_sn_list_item_choose_user_phone_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:text="去通讯录选择》"
+                android:textColor="@color/rcbase_app_main"
+                android:textSize="13dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@+id/include_sn_list_item_choose_user_phone"
+                android:layout_marginRight="46dp"
+                android:layout_toRightOf="@+id/include_sn_list_item_choose_user_phone"
+                android:background="@color/rcbase_app_line_default" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:textColor="#2676ff"
+            android:text="@string/rcdevice_sn_binding_phone_text" />
+
+
+    </LinearLayout>
+</LinearLayout>

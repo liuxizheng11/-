@@ -1,0 +1,29 @@
+<resources>
+    <string name="rc_sure">sure</string>
+    <string name="rc_cancel">cancel</string>
+    <string name="rc_close">close</string>
+    <string name="rc_save">save</string>
+    <string name="rc_edit">edit</string>
+    <string name="rc_over">over</string>
+    <string name="rc_share">share</string>
+    <string name="rc_exit">exit</string>
+    <string name="rc_unfold">unfold</string>
+    <string name="rc_packup">pack up</string>
+    <string name="rc_load_more">load more</string>
+    <string name="rc_loading">loading</string>
+    <string name="rc_no_more">no more</string>
+    <string name="rc_more">more</string>
+    <string name="rc_delete">delete</string>
+    <string name="rc_camera">camera</string>
+    <string name="rc_phonelist">photo album</string>
+    <string name="rc_photo_preview">preview</string>
+    <string name="rc_get_data_error">Failed to request data, click Retry</string>
+    <string name="rc_choose_date">Select date</string>
+    <string name="rc_choose_datetime">Select time</string>
+    <string name="rc_man">man</string>
+    <string name="rc_woman">woman</string>
+    <string name="rc_years_of_age">years old</string>
+    <string name="rc_save_successfully">Save successfully</string>
+    <string name="rc_day_tian">day</string>
+    <string name="rc_day_ri">day</string>
+</resources>

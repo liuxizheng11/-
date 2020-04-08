@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp">
+
+    <EditText
+        android:id="@+id/activity_diet_editTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@null"
+        android:hint="@string/rcdevice_record_release_hint"
+        android:padding="10dp"
+        android:textColor="@color/fragment_record_app_text"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/activity_diet_photo_choose"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"></GridView>
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/activity_diet_break_fast"
+                android:layout_width="62dp"
+                android:layout_height="23dp"
+                android:background="@drawable/bg_diet_release_time"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/rcdevice_record_breakFast"
+                android:textColor="@drawable/bg_diet_release_text_selcet_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_diet_break_fast"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="6:00~9:00"
+                android:textColor="#cccccc"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp">
+
+            <RadioButton
+                android:id="@+id/activity_diet_lunch"
+                android:layout_width="62dp"
+                android:layout_height="23dp"
+                android:background="@drawable/bg_diet_release_time"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/rcdevice_record_lunch"
+                android:textColor="@drawable/bg_diet_release_text_selcet_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_diet_lunch"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="11:00~14:00"
+                android:textColor="#cccccc"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp">
+
+            <RadioButton
+                android:id="@+id/activity_diet_dinner"
+                android:layout_width="62dp"
+                android:layout_height="23dp"
+                android:background="@drawable/bg_diet_release_time"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/rcdevice_record_dinner"
+                android:textColor="@drawable/bg_diet_release_text_selcet_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_diet_dinner"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:text="17:00~20:00"
+                android:textColor="#cccccc"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp">
+
+            <RadioButton
+                android:id="@+id/activity_diet_snacks"
+                android:layout_width="62dp"
+                android:layout_height="23dp"
+                android:background="@drawable/bg_diet_release_time"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/rcdevice_record_snacks"
+                android:textColor="@drawable/bg_diet_release_text_selcet_color"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="11dp"
+        android:background="@color/fragment_record_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/circle_number_text"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/activity_diet_friends_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

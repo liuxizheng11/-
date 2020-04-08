@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="17dp">
+
+    <TextView
+        android:id="@+id/tv_item_xun_yi_consult_time_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:textColor="#999999"
+        android:textSize="11dp" />
+
+    <com.rocedar.lib.base.view.CircleImageView
+        android:id="@+id/civ_item_xun_yi_consult_head_right"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_xun_yi_consult_time_right"
+        android:background="@android:color/white"
+        app:rc_border_color="#ccc"
+        android:visibility="invisible"
+        app:rc_border_width="1px" />
+
+    <TextView
+        android:id="@+id/tv_item_hbp_consult_content_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/civ_item_xun_yi_consult_head_right"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/civ_item_xun_yi_consult_head_right"
+        android:background="@drawable/img_xun_yi_dialog_right"
+        android:gravity="center_vertical|left"
+        android:lineSpacingMultiplier="1.4"
+        android:padding="10dp"
+        android:textColor="@color/rc_white"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_item_xun_yi_consult_right_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:text="@string/rc_xun_yi_finish"
+        android:layout_below="@+id/tv_item_hbp_consult_content_right"
+        android:layout_marginBottom="17dp"
+        android:textColor="#999999"
+        android:textSize="11dp" />
+</RelativeLayout>

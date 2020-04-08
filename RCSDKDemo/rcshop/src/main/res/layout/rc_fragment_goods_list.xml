@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rocedar.lib.base.view.RCScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rc_fragment_goods_list_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f4f9"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="?attr/RCDarkColor" />
+
+
+        <com.rocedar.lib.base.view.RCListViewForScrollView
+            android:id="@+id/rc_fragment_goods_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="85dp"
+            android:divider="#00000000"
+            android:theme="@style/RC_Base_ListViewTheme" />
+
+    </FrameLayout>
+
+</com.rocedar.lib.base.view.RCScrollView>

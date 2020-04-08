@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/rc_server_goods_particulars_head"
+                    android:layout_width="59dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="23dp" />
+
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_commodity_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_toRightOf="@+id/rc_server_goods_particulars_head"
+                    android:text="商品名称"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_servertime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rc_server_goods_particulars_commodity_name"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@+id/rc_server_goods_particulars_head"
+                    android:text="服务时长"
+                    android:textColor="#666666"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:layout_marginTop="21dp"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_my_order_number"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars__order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_open_status"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_open_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_order_type"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rc_server_goods_particulars_phone_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_shop_phone_no"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_money_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/rc_server_goods_particulars_money"
+                    android:text="@string/rc_my_order_money"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/rc_server_goods_particulars_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/rc_text_color"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rc_line" />
+
+            <TextView
+                android:id="@+id/rc_server_goods_particulars_go_pay"
+                android:layout_width="102dp"
+                android:layout_height="37dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="去支付"
+                android:textColor="@color/rc_white"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/rc_line" />
+
+            <com.rocedar.lib.base.view.RCListViewForScrollView
+                android:id="@+id/rc_server_goods_particulars_listview"
+                style="@style/RC_Base_ListViewTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

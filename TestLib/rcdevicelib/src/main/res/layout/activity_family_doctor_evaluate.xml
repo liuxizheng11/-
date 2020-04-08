@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_doctor_evaluate_head"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        >
+
+        <!--头像-->
+        <com.rocedar.deviceplatform.app.view.CircleImageView
+            android:id="@+id/iv_doctor_evaluate_head"
+            android:layout_width="62.5dp"
+            android:layout_height="62.5dp"
+            android:layout_marginLeft="13dp"
+            app:border_color="#ccc"
+            app:border_width="1px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp" />
+        <!--姓名-->
+        <TextView
+            android:id="@+id/tv_doctor_evaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/iv_doctor_evaluate_head"
+            android:text="刘海燕"
+            android:textColor="@color/rcbase_white"
+            android:textSize="16dp" />
+        <!--职位-->
+        <TextView
+            android:id="@+id/tv_doctor_evaluate_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_doctor_evaluate_name"
+            android:layout_below="@+id/tv_doctor_evaluate_name"
+            android:layout_marginTop="5dp"
+            android:text="副主任医师"
+            android:textColor="@color/rcbase_white"
+            android:textSize="13dp" />
+        <!--科室-->
+        <TextView
+            android:id="@+id/tv_doctor_evaluate_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_doctor_evaluate_job"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_doctor_evaluate_job"
+            android:text="儿科"
+            android:textColor="@color/rcbase_white"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:text="@string/rcdevice_family_doctor_evaluate_graded"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textSize="15dp" />
+
+    <com.rocedar.deviceplatform.app.view.MyRatingBar
+        android:id="@+id/ratingbar_doctor_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:clickable="true"
+        app:halfstart="false"
+        app:starCount="5"
+        app:starEmpty="@mipmap/ic_star_big_gray"
+        app:starFill="@mipmap/ic_star_big_orang"
+        app:starImageHeight="40dp"
+        app:starImagePadding="15dp"
+        app:starImageWidth="40dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_doctor_evaluate_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.0"
+            android:textColor="#F3AC44"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_doctor_evaluate_reputably"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_doctor_evaluate_number"
+            android:text="非常好"
+            android:textColor="@color/rcbase_app_text_default_666"
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="@string/rcdevice_family_doctor_evaluate_appraise"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_doctor_evaluate_fill_in"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/main_step_bg"
+        android:gravity="left"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="13dp"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textColorHint="@color/rcbase_app_text_default_999"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_doctor_evaluate_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/rcbase_app_main_btn"
+        android:gravity="center"
+        android:text="@string/rcdevice_family_doctor_evaluate"
+        android:textColor="@color/rcbase_white" />
+</LinearLayout>

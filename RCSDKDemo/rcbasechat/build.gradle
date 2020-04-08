@@ -1,0 +1,56 @@
+group 'com.rocedar.android.base'
+def artifactId = "chat"
+
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.rcsdkCode.chat
+        versionName "$rootProject.ext.rcsdkVersion.chat"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            if (rootProject.ext.Debug.toBoolean()) {
+                repository(url: "http://maven.rocedar.com:18003/nexus/content/repositories/snapshots/") {
+                    authentication(userName: "admin", password: "guiBai_maven")
+                }
+                pom.version = "$rootProject.ext.rcsdkDebugVersion.chat"
+            } else {
+                repository(url: "http://maven.rocedar.com:18003/nexus/content/repositories/releases/") {
+                    authentication(userName: "admin", password: "guiBai_maven")
+                }
+                pom.version = "$rootProject.ext.rcsdkVersion.chat"
+            }
+            pom.artifactId = "$artifactId"
+            pom.groupId = "$project.group"
+        }
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:recyclerview-v7:' + rootProject.ext.dependVersion.support
+
+
+}

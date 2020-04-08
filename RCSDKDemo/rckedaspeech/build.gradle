@@ -1,0 +1,65 @@
+group 'com.rocedar.android.base'
+def artifactId = "kedaspeech"
+
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.rcsdkCode.yunxin
+        versionName "$rootProject.ext.rcsdkVersion.yunxin"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    compile files('libs/Sunflower.jar')
+    compile files('libs/Msc.jar')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                if (rootProject.ext.Debug.toBoolean()) {
+                    repository(url: "http://maven.rocedar.com:18003/nexus/content/repositories/snapshots/") {
+                        authentication(userName: "admin", password: "guiBai_maven")
+                    }
+                    pom.version = "$rootProject.ext.rcsdkDebugVersion.kedaspeech"
+                } else {
+                    repository(url: "http://maven.rocedar.com:18003/nexus/content/repositories/releases/") {
+                        authentication(userName: "admin", password: "guiBai_maven")
+                    }
+                    pom.version = "$rootProject.ext.rcsdkVersion.kedaspeech"
+                }
+                pom.artifactId = "$artifactId"
+                pom.groupId = "$project.group"
+            }
+        }
+    }
+
+}

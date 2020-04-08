@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="点不了表示没有绑定这边设备"
+        android:textColor="#CC0000" />
+
+    <Button
+        android:id="@+id/device_app_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="博之轮手环" />
+
+    <Button
+        android:id="@+id/device_app_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="摩集客耳机" />
+
+    <Button
+        android:id="@+id/device_app_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="缘渡手串" />
+
+    <Button
+        android:id="@+id/device_app_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="HeHaQi手环" />
+    <Button
+        android:id="@+id/device_app_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="DUDO手环" />
+
+    <Button
+        android:id="@+id/device_app_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手机" />
+
+</LinearLayout>

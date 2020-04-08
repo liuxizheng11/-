@@ -1,0 +1,104 @@
+ext {
+
+    android = [
+            compileSdkVersion: 27,
+            minSdkVersion    : 18,
+            targetSdkVersion : 27
+    ]
+
+    dependVersion = [
+            support: "27.1.1"
+    ]
+
+    rcsdkVersion = [
+            //独立库（工具类库）
+            //（上传优先级：1）图片照片库，最后上传时间：2018-8-31 10h 1005
+            gallery      : "1.0.06",
+            //（上传优先级：1）分享、统计（友盟）库，最后上传时间：2018-8-30 11h 1000
+            share        : "1.0.00",
+            //（上传优先级：1）视频播放库，最后上传时间：2018-10-24 19h 1100
+            mediaplayer  : "1.1.00",
+            // （上传优先级：1）图表库，最后上传时间：2018-8-30 11h 1000
+            chat         : "1.0.00",
+            // （上传优先级：1）图片加载库，最后上传时间：2018-8-31 10h 1000
+            glide        : "1.0.00",
+            // （上传优先级：1）科大语音识别，最后上传时间：2018-11-14 10h 1000
+            kedaspeech   : "1.0.00",
+            //（上传优先级：1）ITING手表SDK，最后上传时间：2019-03-28 10h 1000
+            itingsdk     : "1.0.00",
+
+            //（上传优先级：2）基础库，最后上传时间：2018-12-20 10h 1300
+            base         : "1.3.00",//(引用gallery)
+
+            //（上传优先级：3）商城SDK，最后上传时间：2018-11-23 16h 1200
+            shop         : "1.2.00",//(引用base)
+            //上传优先级：3）云信（视频通话）  最后上传时间：2018-8-30 11h 1000
+            yunxin       : "1.0.00",//(引用base)
+            //上传优先级：3）平台指标数据
+            indicatordata: "1.0.00",//(引用base)
+
+            //（上传优先级：4）健康课堂SDK，最后上传时间：2018-12-20 10h 1300
+            healthclass  : "1.3.02",//(引用base mediaplayer)
+            //（上传优先级：4）家庭医生SDK，最后上传时间：2018-12-20 10h 1300
+            familydoctor : "1.3.02",//(引用base,引用shop)
+            //（上传优先级：4）健康测评SDK，最后上传时间：2018-7-16 17h 1004
+            assessment   : "1.0.04",//(引用base)
+            //（上传优先级：4）扫描SDK，最后上传时间：2018-8-30 11h 1000
+            scanner      : "1.0.00"//(引用base)
+
+
+    ]
+
+    rcsdkCode = [
+            gallery      : 1006,
+            share        : 1000,
+            mediaplayer  : 1100,
+            chat         : 1000,
+            glide        : 1000,
+            kedaspeech   : 1000,
+            itingsdk     : 1000,
+
+            base         : 1300,
+
+            shop         : 1200,
+            yunxin       : 1000,
+            indicatordata: 1000,
+
+            healthclass  : 1302,
+            familydoctor : 1302,
+            assessment   : 1004,
+            scanner      : 1000
+
+
+    ]
+
+    rcsdkDebugVersion = [
+
+            gallery      : "1.1.00-SNAPSHOT",
+            share        : "1.0.10-SNAPSHOT",
+            mediaplayer  : "1.2.01-SNAPSHOT",
+            chat         : "1.0.00-SNAPSHOT",
+            glide        : "1.1.00-SNAPSHOT",
+            kedaspeech   : "1.0.00-SNAPSHOT",
+            itingsdk     : "1.0.05.001-SNAPSHOT",
+
+            base         : "1.2.12-SNAPSHOT",
+
+            shop         : "1.2.19-SNAPSHOT",
+            yunxin       : "1.0.28-SNAPSHOT",
+            indicatordata: "1.0.02.05-SNAPSHOT",
+
+            healthclass  : "1.2.10-SNAPSHOT",
+            assessment   : "1.0.02-SNAPSHOT",
+            familydoctor : "1.2.24-SNAPSHOT",
+            scanner      : "1.0.01-SNAPSHOT"
+
+
+    ]
+
+
+    Debug = true
+    Local = false
+
+
+}

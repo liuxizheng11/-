@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@mipmap/img_expert_introduce">
+        <!--头像-->
+        <com.rocedar.deviceplatform.app.view.CircleImageView
+            android:id="@+id/iv_hbp_professor_head"
+            android:layout_width="62.5dp"
+            android:layout_height="62.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@color/white"
+            app:border_color="#ccc"
+            app:border_width="1px" />
+
+        <LinearLayout
+            android:id="@+id/ll_hbp_professor_name_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_hbp_professor_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <!--姓名-->
+            <TextView
+                android:id="@+id/tv_hbp_professor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/rcbase_white"
+                android:textSize="16dp" />
+
+            <!--职位-->
+            <TextView
+                android:id="@+id/tv_hbp_professor_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="1dp"
+                android:text="副主任医师"
+                android:textColor="@color/rcbase_white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_hbp_professor_name_job"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <!--医院-->
+            <TextView
+                android:id="@+id/tv_hbp_professor_hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="哈喽哈喽哈喽哈喽哈喽"
+                android:textColor="@color/rcbase_white"
+                android:textSize="13dp" />
+
+            <!--科室-->
+            <TextView
+                android:id="@+id/tv_hbp_professor_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:text="儿科"
+                android:textColor="@color/rcbase_white"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:text="擅长"
+        android:textColor="@color/rcbase_app_text_default_666"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_hbp_professor_skilled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textSize="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="17dp"
+        android:background="@color/rcbase_app_line_default" />
+</LinearLayout>

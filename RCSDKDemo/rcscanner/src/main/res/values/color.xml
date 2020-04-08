@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 扫描用到的颜色值-->
+    <color name="rc_scan_viewfinder_mask">#60000000</color>
+    <color name="rc_scan_result_view">#b0000000</color>
+    <color name="rc_scan_possible_result_points">#c0ffff00</color>
+
+</resources>

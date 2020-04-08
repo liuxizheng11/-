@@ -1,0 +1,205 @@
+[{
+ "name": "MITAC_FUNC_GET_SDK_VERSION",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+},{
+ "name": "WRISTBANDFUNC_START_REALTIME_STEP_COUNT",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_STOP_REALTIME_STEP_COUNT",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_DISCONNECT",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_START_REQUEST_STEP_HISTORY",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_STOP_REQUEST_STEP_HISTORY",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_START_REQUEST_SLEEP_HISTORY",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_STOP_REQUEST_SLEEP_HISTORY",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_START_EKG",
+ "param": {
+  "type": {
+   "EKG_RUNMETHOD_HR": 1,
+   "EKG_RUNMETHOD_CPC": 2
+  },
+ "age": 30,
+ "level": {
+ "EKG_HRV": 0,
+ "EKG_TRAINING_LEVEL_1": 1,
+ "EKG_TRAINING_LEVEL_2": 2,
+ "EKG_TRAINING_LEVEL_3": 3
+ }
+ },
+ "param_count": 4,
+ "linecount":4
+ }, {
+ "name": "WRISTBANDFUNC_STOP_EKG",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_START_OTA",
+ "param": {"Firmware":{"R24":"R24.bin","T26":"T26.bin","R26":"R26.bin","R27":"R27.bin"}},
+ "param_count": 1,
+ "linecount":1
+ }, {
+ "name": "WRISTBANDFUNC_GET_OTA_MODE",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ },  {
+ "name": "WRISTBANDFUNC_ERASE_HISTORY_DATA",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ },{
+ "name": "WRISTBANDFUNC_GET_MAC_ADDRESS",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_GET_FIRMWARE_VERSION",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ },  {
+ "name": "WRISTBANDFUNC_SET_PROFILE",
+ "param": {
+ "isMale": {"YES":"true","NO":"false"},
+ "age": 30,
+ "height": 123,
+ "weight": 45
+ },
+ "param_count": 4,
+ "linecount":4
+ }, {
+ "name": "WRISTBANDFUNC_GET_PROFILE",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_GET_BATTERY_LEVEL",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_GET_ALARM",
+ "param": {
+ "isWakeupAlarm": {
+ "WAKEUP": true,
+ "SLEEP": false
+ }
+ },
+ "param_count": 1,
+ "linecount":1
+ }, {
+ "name": "WRISTBANDFUNC_SET_ALARM",
+ "param": {
+  "isWakeupAlarm": {
+   "WAKEUP": "true",
+   "SLEEP": "false"
+  },
+ "weekday Nap Alarm": {
+  "isEnabled": false,
+ "hour": 1,
+ "minute": 2
+  },
+ "weekday Alarm": {
+  "isEnabled": false,
+ "hour": 3,
+ "minute": 4
+ },
+ "weekend Nap Alarm": {
+ "isEnabled": false,
+ "hour": 5,
+ "minute": 6
+ },
+ "weekend Alarm": {
+  "isEnabled": false,
+ "hour": 7,
+ "minute": 8
+ }
+ },
+ "param_count": 13,
+ "linecount":4
+},{
+ "name": "WRISTBANDFUNC_SET_GOAL",
+ "param": {
+ "steps": 10000,
+ "distance": 1000,
+ "calories": 10000,
+ "runtime": 10000
+ },
+ "param_count": 4,
+ "linecount":4
+ }, {
+ "name": "WRISTBANDFUNC_GET_GOAL",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_GET_SERIAL_NO",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, {
+ "name": "WRISTBANDFUNC_SET_TIME",
+ "param": {
+ "currentTime": "2016-01-01 05:32:47",
+ "is24hr": {
+ "YES": "true",
+ "NO": "false"
+ },
+ "reset step": {
+ "NO": "false",
+ "YES": "true"
+ }
+ },
+ "param_count": 3,
+ "linecount":3
+ },
+ {
+ "name": "WRISTBANDFUNC_GET_TIME",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }, 
+ {
+ "name": "WRISTBANDFUNC_SET_STEP_MEASURE_MODE",
+ "param": {
+ "mode": {
+ "Belt mode": true,
+ "wristband mode": false
+ }
+ },
+ "param_count": 1,
+ "linecount":1
+ }, {
+ "name": "WRISTBANDFUNC_GET_STEP_MEASURE_MODE",
+ "param": {},
+ "param_count": 0,
+ "linecount":0
+ }]

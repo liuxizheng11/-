@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="RCMyRatingBar" tools:ignore="ResourceName">
+        <attr name="rc_starImageSize" format="dimension" />
+        <attr name="rc_starImageWidth" format="dimension" />
+        <attr name="rc_starImageHeight" format="dimension" />
+        <attr name="rc_starImagePadding" format="dimension" />
+        <attr name="rc_starCount" format="integer" />
+        <attr name="rc_starNum" format="integer" />
+        <attr name="rc_starEmpty" format="reference" />
+        <attr name="rc_starFill" format="reference" />
+        <attr name="rc_starHalf" format="reference" />
+        <attr name="rc_clickable" format="boolean" />
+        <attr name="rc_halfstart" format="boolean" />
+    </declare-styleable>
+
+</resources>

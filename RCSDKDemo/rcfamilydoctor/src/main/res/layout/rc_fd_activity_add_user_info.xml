@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/activity_basic_r_u_i_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_basic_r_u_i_over"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rc_fd_true_name"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_basic_r_u_i_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="#00000000"
+                android:gravity=""
+                android:maxLength="15"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/rc_text_color"
+                android:textColorHint="#999999"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e0e0e0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="@string/rc_fd_true_sex"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/activity_basic_r_u_i_sex_man"
+                    android:layout_width="114dp"
+                    android:layout_height="34dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/rc_fd_man"
+                    android:textColor="@drawable/rc_fd_choose_text_666_fff"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/activity_basic_r_u_i_sex_woman"
+                    android:layout_width="114dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="14dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/rc_fd_woman"
+                    android:textColor="@drawable/rc_fd_choose_text_666_fff"
+                    android:textSize="14dp" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="@string/rc_fd_birthday"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_basic_r_u_i_birthday"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:text="2017年11月21日"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="@string/rc_fd_stature"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_basic_r_u_i_stature_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="172 cm"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+            <com.rocedar.lib.base.view.RCScaleChat
+                android:id="@+id/activity_basic_r_u_i_stature_chat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                app:rc_default_choose="30"
+                app:rc_max_number="230"
+                app:rc_min_number="30"
+                app:rc_unit="cm" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="@string/rc_fd_weight"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_basic_r_u_i_weight_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="60 kg"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+            <com.rocedar.lib.base.view.RCScaleChat
+                android:id="@+id/activity_basic_r_u_i_weight_chat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                app:rc_default_choose="30"
+                app:rc_max_number="200"
+                app:rc_min_number="10"
+                app:rc_unit="kg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/activity_basic_r_u_i_over"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:text="@string/rc_over"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/rc_text_size" />
+</RelativeLayout>

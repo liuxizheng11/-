@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="RCDeviceWheelView">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="selectedTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="maskHight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyRatingBar" tools:ignore="ResourceName">
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starImageWidth" format="dimension"/>
+        <attr name="starImageHeight" format="dimension"/>
+        <attr name="starImagePadding" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starNum" format="integer"/>
+        <attr name="starEmpty" format="reference"/>
+        <attr name="starFill" format="reference"/>
+        <attr name="starHalf" format="reference"/>
+        <attr name="clickable" format="boolean"/>
+        <attr name="halfstart" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/sn_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_lxpressure_bind">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/sn_main_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6.5dp"
+                    android:background="#f3f3f3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/rcbase_white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/tv_lxpressure_sn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="32dp"
+                        android:text="@string/rcdevice_device_bind_sn"
+                        android:textColor="@color/rcbase_app_text_default"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_input_sn"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_lxpressure_sn"
+                        android:background="@color/edit_bacground_null"
+                        android:ellipsize="start"
+                        android:hint="@string/rcdevice_device_bind_input_sn"
+                        android:maxLines="1"
+                        android:paddingLeft="25dp"
+                        android:singleLine="true"
+                        android:textColor="@color/main_home_menu_normal"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:id="@+id/sn_main_scan"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/promote_tag"
+                        android:scaleType="center"
+                        android:src="@mipmap/ic_device_scan"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6.5dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="#f3f3f3" />
+
+                <ImageView
+                    android:id="@+id/rcdevice_sn_binding_botoom_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:src="@mipmap/ic_celiang"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/sn_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" />
+
+                <include layout="@layout/include_sn_grid" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_lxpressure_bind"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rectangle_main_0dp"
+            android:gravity="center"
+            android:text="@string/rcdevice_device_bind"
+            android:textColor="@color/rcbase_white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sn_go_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#e8f4ff"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/rcdevice_sn_go_shopping"
+            android:textColor="@color/rcbase_app_main"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+    <ListView
+        android:layout_below="@+id/rl_sn_go_shopping"
+        android:id="@+id/data_echo_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+</RelativeLayout>

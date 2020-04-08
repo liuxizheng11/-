@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">rchealthclass</string>
+    <string name="rc_health_search">大家正在搜索: 健康课堂</string>
+    <string name="rc_cancle">取消</string>
+    <string name="rc_share">分享</string>
+    <string name="rc_video_play">继续播放</string>
+    <string name="rc_video_play_flow">当前视频所需流量</string>
+    <string name="rc_video_doctor">专家介绍 :</string>
+    <string name="rc_search_no_data">抱歉，没有找到相关选项</string>
+</resources>

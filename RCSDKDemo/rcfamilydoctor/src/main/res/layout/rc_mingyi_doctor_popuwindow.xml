@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/rc_fragment_mingyi_doctor_root"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/rc_fragment_mingyi_doctor_root_listview"
+            style="@style/RC_Base_ListViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/rc_white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rc_fragment_mingyi_doctor_sub"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        >
+        <ListView
+            android:id="@+id/rc_fragment_mingyi_doctor_sub_listview"
+            style="@style/RC_Base_ListViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa" />
+    </FrameLayout>
+
+</LinearLayout>

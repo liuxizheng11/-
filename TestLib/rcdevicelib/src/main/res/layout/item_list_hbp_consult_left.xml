@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="17dp">
+
+    <TextView
+        android:id="@+id/iv_item_hbp_consult_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="13.10"
+        android:textColor="@color/rcbase_app_text_default_999"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/iv_item_hbp_consult_head_left"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/iv_item_hbp_consult_time_left"
+        android:src="@mipmap/ic_hypertension_head" />
+
+    <ImageView
+        android:id="@+id/iv_item_hbp_consult_head_left_new"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/iv_item_hbp_consult_time_left"
+        android:src="@mipmap/ic_hypertension_head_new"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_item_hbp_consult_content_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_item_hbp_consult_head_left_new"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="65dp"
+        android:layout_toRightOf="@+id/iv_item_hbp_consult_head_left"
+        android:background="@drawable/img_hbp_dialog_left"
+        android:gravity="center_vertical|left"
+        android:lineSpacingExtra="@dimen/linepaddingbutton"
+        android:minLines="2"
+        android:padding="10dp"
+        android:text="发际偶发刘嘉玲发酒疯了"
+        android:textColor="@color/rcbase_app_text_default"
+        android:textSize="13dp" />
+</RelativeLayout>

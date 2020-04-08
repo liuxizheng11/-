@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/chart_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="@string/rcdevice_record_day_ri"
+                    android:textColor="@color/fragment_record_app_text"
+                    android:textSize="11dp" />
+
+                <View
+                    android:id="@+id/chart_day_view"
+                    android:layout_width="43dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/chart_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:button="@null"
+                    android:text="@string/rcdevice_record_week"
+                    android:textColor="@color/fragment_record_app_text"
+                    android:textSize="11dp" />
+
+                <View
+                    android:id="@+id/chart_week_view"
+                    android:layout_width="43dp"
+                    android:visibility="invisible"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/chart_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:button="@null"
+                    android:text="@string/rcdevice_record_month"
+                    android:textColor="@color/fragment_record_app_text"
+                    android:textSize="11dp" />
+
+                <View
+                    android:id="@+id/chart_month_view"
+                    android:layout_width="43dp"
+                    android:visibility="invisible"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/record_day_chart_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:paddingTop="13dp"
+        android:text="adsads"
+        android:textColor="@color/fragment_record_app_text"
+        android:textSize="11dp" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/activity_photo_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_choose_photo_bottom_rl" />
+
+
+    <RelativeLayout
+        android:id="@+id/activity_choose_photo_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/photo_select_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="13dp"
+            android:text="0/9"
+            android:textColor="?attr/RCDarkColor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/photo_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="17dp"
+            android:layout_toLeftOf="@+id/activity_choose_photo_submit"
+            android:text="@string/rc_photo_preview"
+            android:textColor="?attr/RCDarkColor"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/activity_choose_photo_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="?attr/RCDarkColor"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="@string/rc_over"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

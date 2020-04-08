@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rcbase_white"
+    android:orientation="vertical">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_waiting_measure"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_measure_bluetooth_start"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:background="@mipmap/ic_measure_bluetooth_not" />
+
+            <TextView
+                android:id="@+id/tv_measure_bluetooth_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_measure_bluetooth_start"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="@string/rcdevice_my_waiting_start_bluetooth"
+                android:textColor="@color/my_wait_normal"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ic_measure_circle_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="28.5dp"
+            android:background="@mipmap/ic_measure_circle_normal" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_measure_wait_conn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:background="@mipmap/ic_measure_connection_not" />
+
+            <TextView
+                android:id="@+id/tv_measure_wait_conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_measure_wait_conn"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="@string/rcdevice_my_waiting_connection"
+                android:textColor="@color/my_wait_normal"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ic_measure_circle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="28.5dp"
+            android:background="@mipmap/ic_measure_circle_normal"
+        />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_wait_measure_start"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:background="@mipmap/ic_measure_start_not" />
+
+            <TextView
+                android:id="@+id/tv_wait_measure_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_wait_measure_start"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="@string/rcdevice_my_measure_blood_pressure"
+                android:textColor="@color/my_wait_normal"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

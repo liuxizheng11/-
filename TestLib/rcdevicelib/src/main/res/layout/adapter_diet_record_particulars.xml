@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:id="@+id/adapter_diet_record_particulars_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:30"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/adapter_diet_record_particulars_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/adapter_diet_record_particulars_time"
+            android:text="早餐"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_diet_record_particulars_image"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/adapter_diet_record_particulars_image"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rc_mingyi_f_cm_vt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/rc_mingyi_cm_visiting_time"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/rc_mingyi_f_cm_vt_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/rc_fd_ic_next" />
+
+            <TextView
+                android:id="@+id/rc_mingyi_f_cm_vt_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/rc_mingyi_f_cm_vt_arrow"
+                android:hint="@string/rc_mingyi_cm_no_choose"
+                android:textColor="@color/rc_text_color"
+                android:textColorHint="#999999"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/rc_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/rc_mingyi_f_cm_vh_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/rc_mingyi_cm_visiting_hospital"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+
+            <EditText
+                android:id="@+id/rc_mingyi_f_cm_vh_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/rc_mingyi_f_cm_vh_title"
+                android:background="@color/transparent"
+                android:gravity="right|center_vertical"
+                android:hint="@string/rc_mingyi_cm_no_input"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="128"
+                android:textColor="@color/rc_text_color"
+                android:textColorHint="#999999"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/rc_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/rc_mingyi_f_cm_vd_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/rc_mingyi_cm_visiting_department"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+
+            <EditText
+                android:id="@+id/rc_mingyi_f_cm_vd_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@id/rc_mingyi_f_cm_vd_title"
+                android:background="@color/transparent"
+                android:gravity="right|center_vertical"
+                android:hint="@string/rc_mingyi_cm_no_input"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="128"
+                android:textColor="@color/rc_text_color"
+                android:textColorHint="#999999"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/rc_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:paddingBottom="17dp"
+            android:paddingLeft="14dp"
+            android:text="@string/rc_mingyi_cm_diagnostic_result"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/rc_mingyi_f_cm_dr_input"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/transparent"
+            android:gravity="top"
+            android:hint="@string/rc_mingyi_cm_input_diagnostic_result"
+            android:maxLength="500"
+            android:textColor="@color/rc_text_color"
+            android:textColorHint="#999999"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/rc_line" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="11dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rc_mingyi_cm_inspection"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/rc_mingyi_f_cm_inspection_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="0/15"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+
+        <com.rocedar.lib.base.view.RCChooseImageView
+            android:id="@+id/rc_mingyi_f_cm_inspection_imagechoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            app:rc_max_choose_number="15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/rc_line" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="11dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rc_mingyi_cm_case_data"
+                android:textColor="@color/rc_text_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/rc_mingyi_f_cm_cd_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="0/15"
+                android:textColor="#999999"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+
+        <com.rocedar.lib.base.view.RCChooseImageView
+            android:id="@+id/rc_mingyi_f_cm_cd_chooseimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            app:rc_max_choose_number="15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/rc_line" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:paddingBottom="17dp"
+            android:paddingLeft="14dp"
+            android:text="@string/rc_mingyi_cm_symptoms_and_signs"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/rc_mingyi_f_cm_sas_input"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/transparent"
+            android:gravity="top"
+            android:hint="@string/rc_mingyi_cm_input_symptoms"
+            android:maxLength="500"
+            android:textColor="@color/rc_text_color"
+            android:textColorHint="#999999"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/rc_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:paddingBottom="17dp"
+            android:paddingLeft="14dp"
+            android:text="@string/rc_mingyi_cm_want_get_help"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/rc_mingyi_f_cm_wgh_input"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/transparent"
+            android:gravity="top"
+            android:hint="@string/rc_mingyi_cm_input_want_get_help"
+            android:maxLength="500"
+            android:textColor="@color/rc_text_color"
+            android:textColorHint="#999999"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/rc_line" />
+
+    </LinearLayout>
+
+
+</ScrollView>

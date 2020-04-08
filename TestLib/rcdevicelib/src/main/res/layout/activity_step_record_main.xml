@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_step_recoed_top_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/step_record_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/step_record_data_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#dfdfdf"
+                        android:textSize="11dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/step_record_all_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="50dp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@+id/run_record_value"
+                        android:text="@string/rcdevice_record_step"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/step_record_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:background="@color/activity_step_recoed_time_ll_bg"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/step_record_valid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/step_record_valid"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rcdevice_record_km"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="#dfdfdf" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/step_record_consume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/step_record_consume"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rcdevice_record_consume_unit"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/include_record_week_year" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="227dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/step_record_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="227dp"
+                    android:background="@color/white"
+                    android:paddingTop="15dp"></android.support.v4.view.ViewPager>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@mipmap/ic_record_left" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@mipmap/ic_record_right" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

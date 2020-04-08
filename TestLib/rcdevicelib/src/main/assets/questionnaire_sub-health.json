@@ -1,0 +1,115 @@
+{
+  "questionnaire": [
+    {
+      "group_id": 0,
+      "group_name": "",
+      "topics": [
+        1
+      ]
+    }
+  ],
+  "topics": {
+    "1": {
+      "topic_name": "有没有以下问题？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "胸闷",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "气短",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "心悸",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "头痛",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "头晕",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "恶心",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "腹泻",
+          "child_topic": ""
+        },
+        {
+          "option_id": 8,
+          "option_name": "食欲不振",
+          "child_topic": ""
+        },
+        {
+          "option_id": 9,
+          "option_name": "记忆力下降",
+          "child_topic": ""
+        },
+        {
+          "option_id": 10,
+          "option_name": "浑身无力",
+          "child_topic": ""
+        },
+        {
+          "option_id": 11,
+          "option_name": "易疲劳",
+          "child_topic": ""
+        },
+        {
+          "option_id": 12,
+          "option_name": "易出汗",
+          "child_topic": ""
+        },
+        {
+          "option_id": 13,
+          "option_name": "尿频",
+          "child_topic": ""
+        },
+        {
+          "option_id": 14,
+          "option_name": "颈肩僵硬",
+          "child_topic": ""
+        },
+        {
+          "option_id": 15,
+          "option_name": "乳腺结节",
+          "child_topic": ""
+        },
+        {
+          "option_id": 16,
+          "option_name": "早泄",
+          "child_topic": ""
+        },
+        {
+          "option_id": 17,
+          "option_name": "眼干",
+          "child_topic": ""
+        },
+        {
+          "option_id": 18,
+          "option_name": "眼涩",
+          "child_topic": ""
+        },
+        {
+          "option_id": 19,
+          "option_name": "近视",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    }
+  }
+}

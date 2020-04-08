@@ -1,0 +1,21 @@
+ [{
+  "MITAC_FUNC_START_EKG":["age", "isMale","type","level"]
+  },{
+  "MITAC_FUNC_SET_PROFILE":["isMale","age","weight","height"]
+  },{
+  "MITAC_FUNC_GET_ALARM":["isWakeupAlarm"]
+  },{
+  "MITAC_FUNC_SET_ALARM":[
+            ["weekday nap Alarm","isEnabled","hour","minute"],
+            ["weekday Alarm","isEnabled","hour","minute"],
+            ["weekend Nap Alarm","isEnabled","hour","minute"],
+            ["weekend Alarm","isEnabled","hour","minute"]]
+  },{
+  "MITAC_FUNC_SET_GOAL":["steps","distance","calories","runtime"]
+  },{
+  "MITAC_FUNC_SET_TIME":["1970_timestamp","is24hr","YES","NO","reset step"]
+  },{
+  "MITAC_FUNC_SET_STEP_MEASURE_MODE":["mode"]
+  },{
+  "MITAC_FUNC_GOTO_OTA_MODE":["R24","T26","R26","R27"]
+  }]

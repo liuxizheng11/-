@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/rc_adapter_order_particulars_topview"
+        android:layout_width="1px"
+        android:layout_height="22dp"
+        android:layout_marginLeft="12dp"
+        android:background="#e0e0e0"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rc_adapter_order_particulars_message_iv_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/rc_adapter_order_particulars_message_iv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="22dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/rc_adapter_order_particulars_message_gray_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/rc_order_particulars_circle"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/rc_adapter_order_particulars_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/rc_adapter_order_particulars_message_iv_ll"
+        android:textColor="@color/rc_text_color"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/rc_adapter_order_particulars_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rc_adapter_order_particulars_message"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/rc_adapter_order_particulars_message_iv_ll"
+        android:textColor="#999999"
+        android:textSize="11dp" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rc_adapter_order_particulars_message_time"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/rc_adapter_order_particulars_message_iv_ll"
+        android:background="#e0e0e0" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rc_adapter_order_particulars_message_iv_ll"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginLeft="12dp"
+        android:background="#e0e0e0" />
+</RelativeLayout>

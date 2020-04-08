@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="measure_error_retry">测量失败,请检查设备佩戴是否正常后重试。</string>
+    <string name="do_measure_is_exit">正在测量中,是否退出</string>
+    <string name="do_measure_is_close_bt">蓝牙已断开连接，请打开蓝牙后重新测量。</string>
+
+
+</resources>

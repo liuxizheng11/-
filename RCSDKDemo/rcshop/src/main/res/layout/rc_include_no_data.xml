@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rc_mingyi_include_no_data_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/rc_mingyi_include_no_data_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="88dp"
+        android:src="@mipmap/rc_no_data_iv" />
+
+    <TextView
+        android:id="@+id/rc_mingyi_include_no_data_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:gravity="center|top"
+        android:text="@string/rc_no_data"
+        android:textColor="#666666"
+        android:textSize="15dp" />
+</LinearLayout>

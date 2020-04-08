@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/run_record_top_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="27dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/run_record_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/run_record_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:id="@+id/run_record_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="50dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:layout_toRightOf="@+id/run_record_value"
+                        android:text="km"
+                        android:textColor="@color/white"
+                        android:textSize="19dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/run_record_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="11dp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/run_record_time_ll"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/run_record_all_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="--:--"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/run_record_all_time"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rcdevice_record_sport_duration"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="#7f799e" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/run_record_valid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="--:--"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/run_record_valid_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/run_record_valid"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rcdevice_record_valid_sport_time"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:id="@+id/run_record_valid_time_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/run_record_valid"
+                        android:layout_marginTop="6dp"
+                        android:layout_toRightOf="@+id/run_record_valid_name"
+                        android:padding="4dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="#7f799e" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/run_record_consume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="--:--"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/run_record_consume"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rcdevice_record_consume_unit"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="#7f799e" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/run_record_heart_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="--:--"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/run_record_heart_rate"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/rcdevice_record_mean_sport_heart_rate"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#404558" />
+
+            <include layout="@layout/include_record_week_year" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="227dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/run_record_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="227dp"
+                    android:background="@color/white"
+                    android:paddingTop="15dp"></android.support.v4.view.ViewPager>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@mipmap/ic_record_left" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@mipmap/ic_record_right" />
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/rcdevice_record_exercise_record"
+                android:textColor="@color/fragment_record_app_text"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="17dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/fragment_record_app_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/fragment_record_line" />
+
+            <com.rocedar.deviceplatform.app.view.MyListView
+                android:id="@+id/run_record_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:divider="@color/fragment_record_line"
+                android:dividerHeight="1px"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <ImageView
+                android:id="@+id/run_record_dont_have_data_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="35dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rcoedar.sdk.healthclass">
+
+    <application>
+
+        <activity android:name=".app.RCHealthClassMainActivity" />
+        <activity android:name=".app.RCHealthClassSearchActivity" />
+        <activity
+            android:name=".app.RCHealthClassVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+
+    </application>
+</manifest>

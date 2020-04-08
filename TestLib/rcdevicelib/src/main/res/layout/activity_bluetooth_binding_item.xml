@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/txtBlueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="17dp"
+        android:text="蓝牙名称"
+        android:textColor="#333"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/txtBlueName"
+        android:text="0.4m"
+        android:textColor="#999" />
+
+    <TextView
+        android:id="@+id/txtBlueAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙地址"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_binding_device"
+        android:layout_width="54dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectangle_main_5px"
+        android:text="连接"
+        android:textColor="@color/rcbase_white"
+        android:textSize="13dp" />
+
+</RelativeLayout>

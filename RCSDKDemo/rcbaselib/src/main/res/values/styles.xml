@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RC_Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="RC_Dialog_Fullscreen" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:windowBackground">@color/rc_transparent_black_3f</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="RC_Base_ListViewTheme">
+        <item name="android:scrollbarSize">2.0dip</item>
+        <item name="android:scrollbarThumbVertical">@android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0px</item>
+    </style>
+
+</resources>

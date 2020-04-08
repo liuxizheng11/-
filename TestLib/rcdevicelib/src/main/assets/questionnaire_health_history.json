@@ -1,0 +1,545 @@
+{
+  "questionnaire": [
+    {
+      "group_id": 1,
+      "group_name": "家族史",
+      "topics": [
+        1
+      ]
+    },
+    {
+      "group_id": 2,
+      "group_name": "疾病史",
+      "topics": [
+        4
+      ]
+    },
+    {
+      "group_id": 3,
+      "group_name": "过敏史",
+      "topics": [
+        7
+      ]
+    },
+    {
+      "group_id": 4,
+      "group_name": "用药史",
+      "topics": [
+        9
+      ]
+    },
+    {
+      "group_id": 5,
+      "group_name": "手术史",
+      "topics": [
+        11
+      ]
+    }
+  ],
+  "topics": {
+    "1": {
+      "topic_name": "您的父母或者兄弟姐妹是否患有明确诊断的疾病？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "是",
+          "child_topic": "2,3"
+        },
+        {
+          "option_id": 2,
+          "option_name": "否",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    },
+    "2": {
+      "topic_name": "疾病名称（可多选）",
+      "type_id": 2,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "肥胖症",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "高血压",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "糖尿病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "脑卒中",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "冠心病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "心力衰竭",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "外周血管并",
+          "child_topic": ""
+        },
+        {
+          "option_id": 8,
+          "option_name": "慢性肾脏疾病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 9,
+          "option_name": "慢性阻塞性肺病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 10,
+          "option_name": "风湿免疫性疾病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 11,
+          "option_name": "痛风",
+          "child_topic": ""
+        },
+        {
+          "option_id": 12,
+          "option_name": "骨质疏松",
+          "child_topic": ""
+        },
+        {
+          "option_id": 13,
+          "option_name": "恶性肿瘤",
+          "child_topic": ""
+        },
+        {
+          "option_id": 14,
+          "option_name": "精神疾病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 15,
+          "option_name": "其他",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "3": {
+      "topic_name": "您的父亲是否在55岁、母亲在65岁之前患有上述疾病？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "是",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "否",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>"
+    },
+    "4": {
+      "topic_name": "您是否患有明确诊断的疾病和异常？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "是",
+          "child_topic": "5,6"
+        },
+        {
+          "option_id": 2,
+          "option_name": "否",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    },
+    "5": {
+      "topic_name": "疾病名称（可多选）",
+      "type_id": 2,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "高血压",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "糖尿病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "脂肪肝",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "血脂异常",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "脑卒中",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "冠心病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "慢性阻塞性肺病",
+          "child_topic": ""
+        },
+        {
+          "option_id": 8,
+          "option_name": "哮喘",
+          "child_topic": ""
+        },
+        {
+          "option_id": 9,
+          "option_name": "骨质疏松",
+          "child_topic": ""
+        },
+        {
+          "option_id": 10,
+          "option_name": "恶性肿瘤",
+          "child_topic": ""
+        },
+        {
+          "option_id": 11,
+          "option_name": "尿酸升高",
+          "child_topic": ""
+        },
+        {
+          "option_id": 12,
+          "option_name": "其他",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "6": {
+      "topic_name": "您被诊断患有上述疾病或异常的年龄是？",
+      "type_id": 3,
+      "options": [
+      ],
+      "answer_template": "被诊断患有上述疾病或异常的年龄是<value>岁"
+    },
+    "7": {
+      "topic_name": "您是否出现过敏？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "是",
+          "child_topic": "8"
+        },
+        {
+          "option_id": 2,
+          "option_name": "否",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    },
+    "8": {
+      "topic_name": "过敏原（可多选）",
+      "type_id": 2,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "青霉素",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "磺胺类",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "链霉素",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "头孢类",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "鸡蛋",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "牛奶",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "海鲜",
+          "child_topic": ""
+        },
+        {
+          "option_id": 8,
+          "option_name": "花粉或尘螨",
+          "child_topic": ""
+        },
+        {
+          "option_id": 9,
+          "option_name": "粉尘",
+          "child_topic": ""
+        },
+        {
+          "option_id": 10,
+          "option_name": "洗洁剂",
+          "child_topic": ""
+        },
+        {
+          "option_id": 11,
+          "option_name": "化妆品",
+          "child_topic": ""
+        },
+        {
+          "option_id": 12,
+          "option_name": "其他",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "过敏原：<value>。"
+    },
+    "9": {
+      "topic_name": "您是否长期服用药物？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "是",
+          "child_topic": "10"
+        },
+        {
+          "option_id": 2,
+          "option_name": "否",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    },
+    "10": {
+      "topic_name": "药物名称（可多选）",
+      "type_id": 2,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "降压药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "降糖药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "调脂药（降脂药）",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "降尿酸药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "抗心律失常药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "缓解哮喘药物",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "解热镇痛药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 8,
+          "option_name": "强的松类药物",
+          "child_topic": ""
+        },
+        {
+          "option_id": 9,
+          "option_name": "雌激素类药物",
+          "child_topic": ""
+        },
+        {
+          "option_id": 10,
+          "option_name": "利尿剂",
+          "child_topic": ""
+        },
+        {
+          "option_id": 11,
+          "option_name": "镇静剂或安眠药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 12,
+          "option_name": "中草药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 13,
+          "option_name": "避孕药",
+          "child_topic": ""
+        },
+        {
+          "option_id": 14,
+          "option_name": "抗抑郁药物",
+          "child_topic": ""
+        },
+        {
+          "option_id": 15,
+          "option_name": "其他",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    },
+    "11": {
+      "topic_name": "您是否因病进行过手术？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "是",
+          "child_topic": "12"
+        },
+        {
+          "option_id": 2,
+          "option_name": "否",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    },
+    "12": {
+      "topic_name": "手术部位（可多选）",
+      "type_id": 2,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "头颅（含脑）",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "眼",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "耳鼻咽喉",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "颌面部及口腔",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "颈部和甲状腺",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "胸部（含肺部）",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "心脏",
+          "child_topic": ""
+        },
+        {
+          "option_id": 8,
+          "option_name": "外周血管",
+          "child_topic": ""
+        },
+        {
+          "option_id": 9,
+          "option_name": "胃肠",
+          "child_topic": ""
+        },
+        {
+          "option_id": 10,
+          "option_name": "肝胆",
+          "child_topic": ""
+        },
+        {
+          "option_id": 11,
+          "option_name": "肾脏",
+          "child_topic": ""
+        },
+        {
+          "option_id": 12,
+          "option_name": "脊柱",
+          "child_topic": ""
+        },
+        {
+          "option_id": 13,
+          "option_name": "四肢及关节",
+          "child_topic": ""
+        },
+        {
+          "option_id": 14,
+          "option_name": "膀胱",
+          "child_topic": ""
+        },
+        {
+          "option_id": 15,
+          "option_name": "妇科",
+          "child_topic": ""
+        },
+        {
+          "option_id": 16,
+          "option_name": "乳腺",
+          "child_topic": ""
+        },
+        {
+          "option_id": 17,
+          "option_name": "前列腺",
+          "child_topic": ""
+        },
+        {
+          "option_id": 18,
+          "option_name": "其他",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>。"
+    }
+  }
+}

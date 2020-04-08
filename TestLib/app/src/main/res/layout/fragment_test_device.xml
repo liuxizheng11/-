@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BZL" />
+
+                <TextView
+                    android:id="@+id/fragment_test_device_bzl_mac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="BZL" />
+
+                <TextView
+                    android:id="@+id/fragment_test_device_bzl_connect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BZL" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <Button
+                        android:id="@+id/fragment_test_device_bzl_b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="连接设备" />
+
+                    <Button
+                        android:id="@+id/fragment_test_device_bzl_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="获取步数" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fragment_test_device_bzl_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_cccccc_5dp"
+                    android:padding="5dp"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BZL" />
+
+                <TextView
+                    android:id="@+id/fragment_test_device_hhq_mac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="BZL" />
+
+                <TextView
+                    android:id="@+id/fragment_test_device_hhq_connect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BZL" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <Button
+                        android:id="@+id/fragment_test_device_hhq_b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="连接设备" />
+
+                    <Button
+                        android:id="@+id/fragment_test_device_hhq_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="获取步数" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fragment_test_device_hhq_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_cccccc_5dp"
+                    android:padding="5dp"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BZL" />
+
+                <TextView
+                    android:id="@+id/fragment_test_device_yd_mac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="BZL" />
+
+                <TextView
+                    android:id="@+id/fragment_test_device_yd_connect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="BZL" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+
+                    <Button
+                        android:id="@+id/fragment_test_device_yd_b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="连接设备" />
+
+                    <Button
+                        android:id="@+id/fragment_test_device_yd_b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="获取步数" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fragment_test_device_yd_info"
+                    android:textSize="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/rectangle_cccccc_5dp"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fragment_test_device_clear"
+            android:layout_width="match_parent"
+            android:text="clear"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#CCCCCC"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="设备列表" />
+
+        <com.rocedar.deviceplatform.app.view.MyListView
+            android:id="@+id/fragment_test_device_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</ScrollView>

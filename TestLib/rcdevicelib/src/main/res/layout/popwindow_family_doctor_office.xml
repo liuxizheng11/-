@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baground_transparency_color"
+    android:orientation="vertical">
+
+
+    <GridView
+        android:id="@+id/gv_family_doctor_office"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="16dp"
+        android:numColumns="3"
+        android:paddingBottom="48dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingRight="15dp"
+        android:scrollbars="none"></GridView>
+</LinearLayout>

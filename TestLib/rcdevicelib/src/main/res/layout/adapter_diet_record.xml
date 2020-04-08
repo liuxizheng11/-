@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/fragment_record_line" />
+
+        <TextView
+            android:id="@+id/adapter_diet_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="11dp"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/fragment_record_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/fragment_record_line" />
+
+        <TextView
+            android:id="@+id/adapter_diet_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="11dp"
+            android:layout_toLeftOf="@+id/adapter_diet_from"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/adapter_diet_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="11dp"
+            android:drawableLeft="@mipmap/ic_runing_record_from"
+            android:drawablePadding="10dp"
+            android:textColor="@color/fragment_record_app_text"
+            android:textSize="11dp" />
+    </RelativeLayout>
+</LinearLayout>

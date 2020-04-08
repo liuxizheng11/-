@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_20">#CCffffff</color>
+    <color name="black_p50">#7f000000</color>
+    <color name="edit_bacground_null">#00000000</color>
+
+    <color name="dialog_button_cancle">#efefef</color>
+
+    <drawable name="transparent_dialog">#99000000</drawable>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="photo_bg">#CCFFFFFF</color>
+
+    <color name="main_step_bg">#f3f4f9</color>
+
+
+    <color name="circle_number_text">#cccccc</color>
+    <!--<color name="login_user_login_btn_on">#7c59c4</color>-->
+    <!--<color name="login_user_login_btn_off">#603da8</color>-->
+    <!--透明 颜色-->
+    <color name="baground_transparency_color">#99000000</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <!--Home Menu 颜色-->
+    <!--<color name="main_home_menu_select">#7c59c4</color>-->
+    <color name="main_home_menu_normal">#999999</color>
+    <!--  <color name="main_home_menu_normal">#7c59c4</color>-->
+    <color name="app_yellow">#ffc11b</color>
+
+    <drawable name="image_bg">#333333</drawable>
+
+    <color name="gray_20">#ffeeeeee</color>
+    <color name="gray_40">#ffbdbdbd</color>
+    <color name="gray_50">#ff9e9e9e</color>
+    <color name="gray_60">#ff757575</color>
+    <color name="gray_70">#ff616161</color>
+    <color name="gray_80">#ff424242</color>
+    <color name="green_20">#ffa5d6a7</color>
+    <color name="blue_gray_70">#ff455a64</color>
+
+    <color name="testlist_hastest">#999999</color>
+    <color name="chart_bg">#fcfcfc</color>
+    <color name="chart_heart_rate_bg">#f4efff</color>
+    <color name="subordination">#FFC11B</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <drawable name="my_energy_label_f">#ee832d</drawable>
+    <drawable name="my_energy_label_d">#f5b035</drawable>
+
+    <color name="survey_orange_dark">#fe4c4c</color>
+    <color name="survey_orange_light">#ffe9a6</color>
+    <color name="survey_radio_bg">#feb705</color>
+    <color name="device_bind_radio_bg">#ffb533</color>
+
+    <color name="main_text_secondary_dark">@color/gray_50</color><!--APP次级字体暗色-->
+    <color name="main_text_secondary_light">@color/gray_40</color><!--APP次级字体亮色-->
+
+    <color name="transparent_white_9f">#9fffffff</color>
+    <color name="transparent_black_0f">#0f000000</color>
+    <color name="transparent_black_5f">#5f000000</color>
+    <color name="transparent_black_df">#df000000</color>
+
+    <color name="contest_list_walk_bg">#caf0f1</color>
+    <color name="contest_list_team_bg">#e4dcfc</color>
+    <color name="contest_list_time">#ff3333</color>
+
+    <color name="weekly_info_bottom">#ffe6b5</color>
+    <color name="home_purple_bg">#7c59c4</color>
+    <color name="home_lover_family">#ffa300</color>
+    <!--设备列表-->
+    <color name="my_money_do_what">#ffae00</color>
+    <!--37血压-->
+    <color name="progress_outer_big_background">#6d33f0</color>
+    <color name="progress_inner_big_background">#8830f3</color>
+    <color name="progress_inner_still_background">#00ffffff</color>
+    <color name="progress_inner_move_background">#ffffff</color>
+    <color name="my_wait_select">#ff9609</color>
+    <color name="my_wait_normal">#ffd389</color>
+    <!--记录页面-->
+    <color name="record_number_color">#02d4ba</color>
+    <color name="run_record_bg">#2e343f</color>
+    <color name="fragment_record_app_text">#333333</color>
+    <color name="fragment_record_bg">#f3f3f4</color>
+    <color name="fragment_record_line">#e0e0e0</color>
+    <color name="activity_running_recoed_top_bg">#3594fb</color>
+    <color name="activity_running_recoed_time_ll_bg">#2e8efb</color>
+    <color name="activity_diding_recoed_top_bg">#3594fb</color>
+    <color name="activity_riding_recoed_time_ll_bg">#2e8efb</color>
+    <color name="activity_exercise_recoed_top_bg">#3594fb</color>
+    <color name="activity_exercise_recoed_time_ll_bg">#2e8efb</color>
+    <color name="activity_sleep_recoed_top_bg">#6089f2</color>
+    <color name="activity_sleep_recoed_time_ll_bg">#5581f3</color>
+    <color name="activity_step_recoed_top_bg">#54c98e</color>
+    <color name="activity_step_recoed_time_ll_bg">#50c088</color>
+
+</resources>

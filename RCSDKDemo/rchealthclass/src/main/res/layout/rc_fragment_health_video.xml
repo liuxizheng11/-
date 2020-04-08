@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rc_line"
+    android:orientation="vertical">
+
+    <include layout="@layout/rc_include_top_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <com.rocedar.lib.sdk.mediaplayer.video.NiceVideoPlayer
+            android:id="@+id/rc_fragment_video_video_player"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <ImageView
+            android:id="@+id/rc_fragment_video_video_player_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/rc_ic_video_play" />
+        <LinearLayout
+            android:id="@+id/rc_fragment_video_video_player_flow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rc_fragment_video_player"
+                android:layout_width="113dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rc_bg_health_video_play"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rc_ic_fragment_videoplay" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="11dp"
+                    android:text="@string/rc_video_play"
+                    android:textColor="@color/rc_white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rc_video_play_flow"
+                    android:textColor="@color/rc_white"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/rc_fragment_video_player_flow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="92M"
+                    android:textColor="#fd6e06"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rc_fragment_video_player_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@mipmap/rc_arrow_left_w" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rc_white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/rc_white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/rc_fragment_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/rc_text_color"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/rc_fragment_video_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rc_fragment_video_title"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/rc_text_color_none"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/rc_fragment_video_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/rc_ic_video_share"
+                android:drawablePadding="5dp"
+                android:text="@string/rc_share"
+                android:textColor="@color/rc_text_color_none"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="#e0e0e0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/rc_video_doctor"
+            android:textColor="@color/rc_text_color"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:id="@+id/rc_fragment_video_doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rc_text_color_light"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/rc_fragment_video_doctor_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/rc_fragment_video_doctor_name"
+                android:textColor="@color/rc_text_color_light"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rc_fragment_video_doctor_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/rc_text_color_light"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="18dp"
+            android:background="#e0e0e0" />
+
+        <TextView
+            android:id="@+id/rc_fragment_video_doctor_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/rc_text_color_none"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

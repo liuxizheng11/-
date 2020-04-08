@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.rocedar.lib.base.view.wheel.RCPersonWheelView
+        android:id="@+id/person_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:paddingLeft="60dp"
+        app:rc_itemNumber="3"
+        app:rc_lineColor="@android:color/transparent"
+        app:rc_lineHeight="0px"
+        app:rc_maskHight="18dp"
+        app:rc_noEmpty="true"
+        app:rc_normalTextColor="#9e9e9e"
+        app:rc_normalTextSize="15dp"
+        app:rc_selectedTextColor="#333333"
+        app:rc_selectedTextSize="22dp"
+        app:rc_unitHight="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年"
+        android:textColor="@color/rc_text_color"
+        android:textSize="10dp" />
+
+
+    <com.rocedar.lib.base.view.wheel.RCPersonWheelView
+        android:id="@+id/person_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:rc_itemNumber="3"
+        app:rc_lineColor="@android:color/transparent"
+        app:rc_lineHeight="0px"
+        app:rc_maskHight="18dp"
+        app:rc_noEmpty="true"
+        app:rc_normalTextColor="#9e9e9e"
+        app:rc_normalTextSize="15dp"
+        app:rc_selectedTextColor="#333333"
+        app:rc_selectedTextSize="22dp"
+        app:rc_unitHight="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月"
+        android:textColor="@color/rc_text_color"
+        android:textSize="10dp" />
+
+
+    <com.rocedar.lib.base.view.wheel.RCPersonWheelView
+        android:id="@+id/person_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        app:rc_itemNumber="3"
+        app:rc_lineColor="@android:color/transparent"
+        app:rc_lineHeight="1px"
+        app:rc_maskHight="18dp"
+        app:rc_noEmpty="true"
+        app:rc_normalTextColor="#9e9e9e"
+        app:rc_normalTextSize="15dp"
+        app:rc_selectedTextColor="#333333"
+        app:rc_selectedTextSize="22dp"
+        app:rc_unitHight="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日"
+        android:textColor="@color/rc_text_color"
+        android:textSize="10dp" />
+
+    <com.rocedar.lib.base.view.wheel.RCPersonWheelView
+        android:id="@+id/person_hour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        app:rc_itemNumber="3"
+        app:rc_lineColor="@android:color/transparent"
+        app:rc_lineHeight="1px"
+        app:rc_maskHight="18dp"
+        app:rc_noEmpty="true"
+        app:rc_normalTextColor="#9e9e9e"
+        app:rc_normalTextSize="15dp"
+        app:rc_selectedTextColor="#333333"
+        app:rc_selectedTextSize="22dp"
+        app:rc_unitHight="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时"
+        android:textColor="@color/rc_text_color"
+        android:textSize="10dp" />
+
+    <com.rocedar.lib.base.view.wheel.RCPersonWheelView
+        android:id="@+id/person_minute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        app:rc_itemNumber="3"
+        app:rc_lineColor="@android:color/transparent"
+        app:rc_lineHeight="1px"
+        app:rc_maskHight="18dp"
+        app:rc_noEmpty="true"
+        app:rc_normalTextColor="#9e9e9e"
+        app:rc_normalTextSize="15dp"
+        app:rc_selectedTextColor="#333333"
+        app:rc_selectedTextSize="22dp"
+        app:rc_unitHight="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="分"
+        android:textColor="@color/rc_text_color"
+        android:textSize="10dp" />
+
+
+</LinearLayout>

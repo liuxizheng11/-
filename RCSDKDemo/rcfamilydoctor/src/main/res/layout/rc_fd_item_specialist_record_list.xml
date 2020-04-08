@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--头像-->
+     <com.rocedar.lib.base.view.CircleImageView
+        android:id="@+id/iv_item_doctor_record_head"
+        android:layout_width="62.5dp"
+        android:layout_height="62.5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/white"
+        app:rc_border_color="#ccc"
+        app:rc_border_width="1px"
+        android:layout_marginTop="17dp" />
+
+    <!--姓名-->
+    <TextView
+        android:id="@+id/tv_item_doctor_record_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/rc_text_color"
+        android:layout_toRightOf="@+id/iv_item_doctor_record_head"
+        android:textSize="16dp" />
+    <!--职位-->
+    <TextView
+        android:id="@+id/tv_item_doctor_record_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_item_doctor_record_name"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@+id/tv_item_doctor_record_name"
+        android:textColor="#666666"
+        android:textSize="13dp" />
+    <!--症状描述-->
+    <TextView
+        android:id="@+id/tv_item_doctor_record_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_doctor_record_name"
+        android:layout_below="@+id/tv_item_doctor_record_job"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@+id/tv_item_doctor_record_desc"
+        android:layout_below="@+id/tv_item_doctor_record_desc"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@mipmap/rc_fd_bg_imaginary_line" />
+    <!--时间-->
+    <TextView
+        android:id="@+id/tv_item_doctor_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_item_doctor_record_desc"
+        android:layout_marginTop="12dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="11dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_item_doctor_record_time"
+        android:layout_marginTop="12dp"
+        android:background="?attr/RCDarkColor" />
+</RelativeLayout>

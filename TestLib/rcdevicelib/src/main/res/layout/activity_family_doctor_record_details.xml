@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="102dp">
+
+                <!--头像-->
+                <com.rocedar.deviceplatform.app.view.CircleImageView
+                    android:id="@+id/iv_doctor_record_head"
+                    android:layout_width="62.5dp"
+                    android:layout_height="62.5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/white"
+                    app:border_color="#ccc"
+                    app:border_width="1px" />
+                <!--姓名-->
+                <TextView
+                    android:id="@+id/tv_doctor_record_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/iv_doctor_record_head"
+                    android:textColor="@color/rcbase_app_text_default"
+                    android:textSize="16dp" />
+                <!--职位-->
+                <TextView
+                    android:id="@+id/tv_doctor_record_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_doctor_record_name"
+                    android:layout_below="@+id/tv_doctor_record_name"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/rcbase_app_text_default_666"
+                    android:textSize="13dp" />
+                <!--科室-->
+                <TextView
+                    android:id="@+id/tv_doctor_record_office"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_doctor_record_job"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignTop="@+id/tv_doctor_record_job"
+                    android:textColor="@color/rcbase_app_text_default_666"
+                    android:textSize="13dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/rcbase_app_line_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/rcdevice_family_doctor_consult_time"
+                android:textColor="@color/rcbase_app_text_default_666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_doctor_record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/rcbase_app_text_default"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/rcbase_app_line_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/rcdevice_family_doctor_consult_sound"
+                android:textColor="@color/rcbase_app_text_default_666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_doctor_record_sound_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/rcbase_app_text_default"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/iv_doctor_record_play"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true" />
+
+                <ProgressBar
+                    android:id="@+id/pb_doctor_record_progress"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/iv_doctor_record_play"
+                    android:progressDrawable="@drawable/progressbar_bg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/rcbase_app_line_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/rcdevice_family_doctor_consult_symptom"
+                android:textColor="@color/rcbase_app_text_default_666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_doctor_record_symptom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/rcbase_app_text_default"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/rcbase_app_line_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/rcdevice_family_doctor_consult_suggest"
+                android:textColor="@color/rcbase_app_text_default_666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_doctor_record_suggest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/rcbase_app_text_default"
+                android:textSize="13dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:background="@color/rcbase_app_line_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/rcdevice_family_doctor_server_evaluate"
+                android:textColor="@color/rcbase_app_text_default_666"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_doctor_record_evaulate_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="13dp"
+                        android:text="您还未评价"
+                        android:textColor="@color/rcbase_app_text_default"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginRight="13dp"
+                        android:drawablePadding="6dp"
+                        android:drawableRight="@mipmap/ic_next"
+                        android:text="去评价"
+                        android:textColor="@color/rcbase_app_main"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_doctor_record_evaulate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include layout="@layout/activity_family_doctor_introduced_comment_adapter"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_doctor_record_consult_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/rcbase_app_main"
+            android:gravity="center"
+            android:text="@string/rcdevice_family_doctor_consult_again"
+            android:textColor="@color/rcbase_white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_doctor_record_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_stroke_main"
+            android:gravity="center"
+            android:text="@string/rcdevice_family_doctor_consult_add"
+            android:textColor="@color/rcbase_app_main"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_doctor_record_consult_again_single"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/rcbase_app_main"
+            android:gravity="center"
+            android:text="@string/rcdevice_family_doctor_consult_again"
+            android:textColor="@color/rcbase_white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

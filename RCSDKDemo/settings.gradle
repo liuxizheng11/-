@@ -1,0 +1,1 @@
+include ':app', ':rcassessment', ':rcmediaplayer', ':rcshare', ':rcscanner', ':rcshop', ':rcyunxin', ':rcglide', ':rchealthclass', ':rckedaspeech', ':rciting', ':rcdata','rcbaselib','rcfamilydoctor','rcgallery','rcbasechat'

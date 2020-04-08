@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="9dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_serial_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="订单编号 909090909"
+            android:textColor="@color/rc_text_color"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_serial_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="待付款"
+            android:textColor="#f7a336"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/rc_line_order_from"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp">
+
+        <ImageView
+            android:id="@+id/rc_xieyi_adapter_image"
+            android:layout_width="59dp"
+            android:layout_height="59dp" />
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/rc_xieyi_adapter_image"
+            android:text="商品名称  "
+            android:layout_marginTop="4dp"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_service_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rc_xieyi_adapter_commodity_name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/rc_xieyi_adapter_image"
+            android:text="服务时长"
+            android:textColor="@color/rc_text_color_light"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rc_xieyi_adapter_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="类型 ： 自用"
+        android:textColor="@color/rc_text_color_light"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/rc_xieyi_adapter_open_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:text="开通状态 ： 未开通"
+        android:textColor="@color/rc_text_color_light"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:background="#e0e0e0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/rc_my_order_place_time"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_my_order_place_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_order_money_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/rc_xieyi_adapter_order_money"
+            android:text="@string/rc_my_order_money"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_order_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/rc_text_color"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:background="#e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_my_order_cancle_order"
+            android:layout_width="102dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="取消订单"
+            android:textColor="?attr/RCDarkColor"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/rc_xieyi_adapter_my_order_go_pay"
+            android:layout_width="102dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/rc_white"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/rc_line" />
+</LinearLayout>

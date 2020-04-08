@@ -1,0 +1,4 @@
+<resources>
+    <string name="rc_yunxin_call_doctor_status">正在等待医生接听</string>
+    <string name="rc_yunxin_call_cancle">取消</string>
+</resources>

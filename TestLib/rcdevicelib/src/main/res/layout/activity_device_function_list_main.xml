@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rcbase_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/device_data_from_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff3df"
+                android:padding="11dp"
+                android:textColor="@color/my_money_do_what"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <com.rocedar.deviceplatform.app.view.MyListView
+                android:id="@+id/my_device_manager_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/main_step_bg"
+                android:dividerHeight="10dp" />
+
+
+            <View
+                android:id="@+id/view_device_manager"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/main_step_bg" />
+
+            <TextView
+                android:id="@+id/my_device_manager_add_binding"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="16dp" />
+
+            <include layout="@layout/include_device_no_data" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

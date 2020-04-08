@@ -1,0 +1,65 @@
+{
+  "questionnaire": [
+    {
+      "group_id": 0,
+      "group_name": "",
+      "topics": [
+        1
+      ]
+    }
+  ],
+  "topics": {
+    "1": {
+      "topic_name": "有没有以下问题？",
+      "type_id": 1,
+      "options": [
+        {
+          "option_id": 1,
+          "option_name": "焦虑",
+          "child_topic": ""
+        },
+        {
+          "option_id": 2,
+          "option_name": "紧张",
+          "child_topic": ""
+        },
+        {
+          "option_id": 3,
+          "option_name": "多疑",
+          "child_topic": ""
+        },
+        {
+          "option_id": 4,
+          "option_name": "自卑",
+          "child_topic": ""
+        },
+        {
+          "option_id": 5,
+          "option_name": "嫉妒",
+          "child_topic": ""
+        },
+        {
+          "option_id": 6,
+          "option_name": "抑郁",
+          "child_topic": ""
+        },
+        {
+          "option_id": 7,
+          "option_name": "恐惧",
+          "child_topic": ""
+        },
+        {
+          "option_id": 8,
+          "option_name": "压抑",
+          "child_topic": ""
+        },
+        {
+          "option_id": 9,
+          "option_name": "敏感",
+          "child_topic": ""
+        }
+      ],
+      "answer_template": "<value>\t"
+    }
+  }
+}

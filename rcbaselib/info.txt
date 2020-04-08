@@ -1,0 +1,41 @@
+rcbaselib说明
+
+该库包括以下内容：
+
+---------初始化-------------
+1.需要在启动页面或Application中调用RCBaseManage中的init方法
+2.登录成功后需要在RCSPBaseInfo中保存token和userId
+
+
+---------主框架内容-------------
+1.网络请求
+   1）使用的是volley
+   2）对外开发的方法是在RequestData类中的抽象方法
+   3）网络请求中的参数需要继承RCBean
+
+2.图片加载
+
+---------提供的工具类-------------
+1.RCAndroid->获取Android设备和项目中常用的参数，提供的方法有
+   1）获取设备的IMEI号
+   2）获取APP配置的版本号(int)
+   3）获取APP配置的版本名称(String)
+   4) 检测是否已经安装指定包名的应用
+   5）打开指定包名应用
+
+2.RCToast->调试日志打印工具类
+   1）使用的是logger，方便查看
+   2）在RCBaseConfig中配置isDebug控制日志打印
+
+3.RCLog->Toast工具类
+   1）Toast封装
+
+4.RCUmeng->友盟统计及事件工具类
+   1）该类使用需要配置shareLib
+
+5.RCUtilEncode->编码处理工具了，提供以下方法
+   1）获取String的16位MD5码
+   2）将String中的中文转为Encode码
+
+
+版本更新说明：

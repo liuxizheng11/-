@@ -1,0 +1,226 @@
+<resources>
+
+    <string name="rcdevice_save">保存</string>
+    <string name="rcdevice_edit">编辑</string>
+    <string name="rcdevice_sure">确定</string>
+    <string name="rcdevice_cancel">取消</string>
+    <string name="rcdevice_exit">退出</string>
+    <string name="rcdevice_unfold">展开</string>
+    <string name="rcdevice_packup">收起</string>
+
+    <!--蓝牙设备-->
+    <string name="rcdevice_ble_not_supported">设备不支持蓝牙BLE</string>
+    <string name="rcdevice_error_bluetooth_not_supported">设备不支持蓝牙</string>
+    <string name="rcdevice_bluetooth_scan_ing">正在扫描蓝牙设备</string>
+    <string name="rcdevice_bluetooth_scan_phone">请将设备靠近手机</string>
+    <string name="rcdevice_my_device_text_wait">正在等待连接蓝牙设备</string>
+    <string name="rcdevice_my_device_text_binding">正在绑定蓝牙设备</string>
+    <string name="rcdevice_my_device_text_success">扫描完毕</string>
+    <string name="rcdevice_my_device_founds">已发现的设备</string>
+    <string name="rcdevice_device_rescan">重新扫描</string>
+    <string name="rcdevice_blue_not_device">未搜索到任何设备</string>
+    <string name="rcdevice_blue_not_device_mjk">未搜索到任何设备\n请确保设备与手机蓝牙均已打开并成功配对</string>
+    <string name="rcdevice_blue_not_device_mjk2">去配对</string>
+    <string name="rcdevice_hehaqi_press_device">请将设备靠近手机,并按下设备按键</string>
+
+
+    <!--SN设备-->
+    <string name="rcdevice_device_bind_sn">SN码</string>
+    <string name="rcdevice_device_phone">手机号</string>
+    <string name="rcdevice_device_bind_input_sn">请输入SN码</string>
+    <string name="rcdevice_device_bind">绑定设备</string>
+    <string name="rcdevice_add_attention_hint">请选择</string>
+    <string name="rcdevice_select_key">选择键位:</string>
+    <string name="rcdevice_select_user_title">使用人</string>
+    <string name="rcdevice_select_user_phone_hint">使用人手机号码</string>
+    <string name="rcdevice_select_user_title_hint">使用人称呼 如爸爸</string>
+    <string name="rcdevice_device_bind_user_repeat">按键使用人重复，请重新选择。</string>
+    <string name="rcdevice_device_bind_sn_null">SN码未填写</string>
+    <string name="rcdevice_device_bind_least_user">请至少填写一个使用人</string>
+    <string name="rcdevice_device_bind_phone_error">请输入正确的手机号码(%s)</string>
+    <string name="rcdevice_device_bind_phone_small">两个使用人手机号不能重复</string>
+    <string name="rcdevice_device_bind_name_small">两个使用人称呼不能重复</string>
+    <string name="rcdevice_login_success_next">下一步</string>
+    <string name="rcdevice_sn_binding_success">绑定成功</string>
+    <string name="rcdevice_device_bind_jianwei_null">请选择键位</string>
+    <string name="rcdevice_data_echo">信息回填</string>
+    <string name="rcdevice_sn_binding_botoom_text">选择后,每次测量请选择对应按钮测量</string>
+    <string name="rcdevice_sn_binding_phone_text">绑定成功后使用人可直接用此手机号码登录动吖</string>
+    <string name="rcdevice_sn_go_shopping">还未购买？去商城看看>></string>
+    <string name="rcdevice_wait_authorize">等待对方授权中...</string>
+    <string name="rcdevice_need_login_agreed">需要对方登录app同意申请</string>
+
+    <!--wifi-->
+    <string name="rcdevice_wifi">WIFI</string>
+    <string name="rcdevice_wifi_hint">未添加wifi</string>
+    <string name="rcdevice_setting_wifi">设置wifi</string>
+    <string name="rcdevice_passward_hint">请输入密码</string>
+    <string name="rcdevice_passward">密码</string>
+    <string name="rcdevice_wifi_on">请确认屏幕</string>
+    <string name="rcdevice_wifi_on_2">闪烁中</string>
+    <string name="rcdevice_wifi_connect">马上连接</string>
+    <string name="rcdevice_wifi_name_erro">请选择wifi</string>
+    <string name="rcdevice_wifi_passward_erro">请填写wifi密码</string>
+    <string name="rcdevice_wifi_on_erro">请确定wifi闪烁</string>
+    <string name="rcdevice_wifi_success">WIFI设置成功</string>
+    <string name="rcdevice_my_device_wifi">配置wifi</string>
+    <string name="rcdevice_unbinding">解除绑定</string>
+    <string name="rcdevice_info_isbinding">已绑定</string>
+    <string name="rcdevice_binding_success">绑定成功</string>
+
+    <!--设备列表-->
+    <string name="rcdevice_my_device_text_add">查看其它设备</string>
+    <string name="rcdevice_add_device">添加设备</string>
+    <string name="rcdevice_go_binding">去绑定</string>
+    <string name="rcdevice_go_measure">去测量</string>
+    <string name="rcdevice_device_no_data_text">您还未绑定设备</string>
+    <string name="rcdevice_choice_device">选择设备</string>
+    <string name="rcdevice_data_from">数据来源</string>
+    <string name="rcdevice_my_device">我的设备</string>
+    <string name="rcdevice_test_blood_pressure">血压测量</string>
+    <string name="rcdevice_auto_blood_pressure">自动测量</string>
+
+    <!--血压测量-->
+    <string name="rcdevice_my_data_source_start_measure">开始测量</string>
+    <string name="rcdevice_my_measure_bluetooth_process">测量过程中...</string>
+    <string name="rcdevice_my_measure_bluetooth_state">蓝牙连接状态&#160;&#160;已连接</string>
+    <string name="rcdevice_my_waiting_start_bluetooth">蓝牙开启</string>
+    <string name="rcdevice_my_waiting_connection">等待连接</string>
+    <string name="rcdevice_my_measure_blood_pressure">测量血压</string>
+    <!-- 乐心WIFI配置错误 -->
+    <string name="rcdevice_lexin_config_time_out">WIFI配置超时，请确保设备指示灯处于闪烁状态后重试</string>
+    <string name="rcdevice_lexin_config_error">WIFI配置错误，请确保设备指示灯处于闪烁状态后重试</string>
+    <!--设备列表-->
+    <string name="rcdevice_home_other_device">其他硬件</string>
+    <string name="rcdevice_hint">提示</string>
+    <string name="rcdevice_do_unbinding_msg">您确定要解除绑定吗?</string>
+    <string name="rcdevice_device_blood_oxygen_no">暂无可连接的智能穿戴设备,仅从一体机和体检报告获取数据</string>
+
+    <!-- 魔集客耳机-->
+    <string name="rcdevice_mjk_can_find">找不到设备，请确认耳机已经连接配对</string>
+
+    <string name="rcdevice_connect_error">设备连接错误</string>
+    <string name="rcdevice_error_not_support">设备不支持</string>
+    <string name="rcdevice_error_busy">设备正在同步数据</string>
+    <string name="rcdevice_error_connect_busy">设备正在连接设备</string>
+    <string name="rcdevice_error_timeout">获取数据超时</string>
+
+    <!--家庭医生-->
+    <string name="rcdevice_family_doctor">家庭医生</string>
+    <string name="rcdevice_family_doctor_office_screen">科室筛选</string>
+    <string name="rcdevice_family_doctor_consult_record">咨询记录</string>
+    <string name="rcdevice_family_doctor_my_doctor">我的医生</string>
+    <string name="rcdevice_family_doctor_my_doctor_introduced">+ 我的医生</string>
+    <string name="rcdevice_family_doctor_consult_count">咨询人次</string>
+    <string name="rcdevice_family_doctor_consult_count_number">%s 咨询人次</string>
+    <string name="rcdevice_family_doctor_consult_time">咨询时间</string>
+    <string name="rcdevice_family_doctor_consult_sound">咨询录音</string>
+    <string name="rcdevice_family_doctor_consult_symptom">咨询症状</string>
+    <string name="rcdevice_family_doctor_consult_suggest">医生建议</string>
+    <string name="rcdevice_family_doctor_video_consult">视频咨询</string>
+    <string name="rcdevice_family_doctor_add">去添加</string>
+    <string name="rcdevice_family_doctor_consult_again">再次咨询</string>
+    <string name="rcdevice_family_doctor_consult_add">添加为我的医生</string>
+    <string name="rcdevice_family_doctor_no_sonsult_record">暂无咨询记录</string>
+    <string name="rcdevice_family_doctor_office_no_doctor">该科室暂时没有医生哦～</string>
+    <string name="rcdevice_family_doctor_evaluate">评价</string>
+    <string name="rcdevice_family_doctor_evaluate_graded">您对本次服务的评分</string>
+    <string name="rcdevice_family_doctor_evaluate_appraise">您对本次服务的评价</string>
+    <string name="rcdevice_family_doctor_evaluate_fill_in">请填写您对医生的评价</string>
+    <string name="rcdevice_family_doctor_server_evaluate">本次服务评价</string>
+
+    <!-- 场景设备提示-->
+    <string name="rcdevice_scene_no_device">未检测到任何设备连接</string>
+    <string name="rcdevice_scene_connect_devices">同时连接了多台设备，点击请选择</string>
+    <string name="rcdevice_scene_connect_info">%1$s手环已连接</string>
+    <string name="rcdevice_scene_unconnect_info">%1$s手环未连接</string>
+
+    <!-- -->
+    <string name="rcdevice_scene_error_info_sleep">睡眠时间太短，数据无效</string>
+    <string name="rcdevice_scene_error_info_run">跑步时间太短，数据无效</string>
+    <string name="rcdevice_scene_error_info_rinding">骑行时间太短，数据无效</string>
+
+
+    <!-- 医生详情-->
+    <string name="rcdevice_family_doctor_introduced">医生详情</string>
+    <string name="rcdevice_family_doctor_introduced_abstract">简介</string>
+    <string name="rcdevice_family_doctor_introduced_license">资质证书</string>
+    <string name="rcdevice_family_doctor_introduced_be_good_at">擅长</string>
+    <string name="rcdevice_family_doctor_introduced_evaluate">评价</string>
+    <string name="rcdevice_family_doctor_introduced_service_evaluate">服务综合评价</string>
+    <string name="rcdevice_family_doctor_introduced_no_evaluate">暂无评价</string>
+    <string name="rcdevice_family_doctor_introduced_add">已关注</string>
+    <!--记录页面-->
+    <string name="rcdevice_record_step">步</string>
+    <string name="rcdevice_record_km">公里</string>
+    <string name="rcdevice_record_consume_unit">Kcal</string>
+    <string name="rcdevice_record_diet_unit">kcal</string>
+    <string name="rcdevice_record_diet_consume_tv">运动已消耗</string>
+    <string name="rcdevice_record_day_intake">今日可以摄入</string>
+    <string name="rcdevice_record_add_record_food">+记录膳食</string>
+    <string name="rcdevice_record_day_ri">日</string>
+    <string name="rcdevice_record_today">今天</string>
+    <string name="rcdevice_record_step_chart_unit">单位: 步</string>
+    <string name="rcdevice_record_sport_duration">运动时长</string>
+    <string name="rcdevice_record_day_tian">天</string>
+    <string name="rcdevice_record_week">周</string>
+    <string name="rcdevice_diet_record">饮食记录</string>
+    <string name="rcdevice_step_record">步行记录</string>
+    <string name="rcdevice_run_record">跑步记录</string>
+    <string name="rcdevice_riding_record">骑行记录</string>
+    <string name="rcdevice_exercise_record">运动记录</string>
+    <string name="rcdevice_step">步行</string>
+    <string name="rcdevice_diet">饮食</string>
+    <string name="rcdevice_sleep">睡眠</string>
+    <string name="rcdevice_device_manage">设备管理</string>
+    <string name="rcdevice_record_month">月</string>
+    <string name="rcdevice_record_this_week">本周</string>
+    <string name="rcdevice_record_this_month">本月</string>
+    <string name="rcdevice_record_run_chart_unit">单位: 时分</string>
+    <string name="rcdevice_record_invalid">无效</string>
+
+    <string name="rcdevice_record_valid_time">有效时长</string>
+    <string name="rcdevice_record_valid_sport_time">有效运动时长</string>
+    <string name="rcdevice_record_valid_time_unit">(有效时长)</string>
+    <string name="rcdevice_record_all_time">总时长</string>
+    <string name="rcdevice_record_duration">时长</string>
+    <string name="rcdevice_record_speed_setting">配速</string>
+    <string name="rcdevice_record_distance">(距离)</string>
+    <string name="rcdevice_record_consume">消耗</string>
+    <string name="rcdevice_record_real_time_heart_rate">实时心率</string>
+    <string name="rcdevice_record_mean_heart_rate">(平均心率)</string>
+    <string name="rcdevice_record_mean_sport_heart_rate">平均运动心率</string>
+    <string name="rcdevice_record_exercise_record">运动记录</string>
+    <string name="rcdevice_record_sleep_day_time">平均睡眠时长</string>
+    <string name="rcdevice_record_sleep_day_heart_rate">睡眠基准心率</string>
+    <string name="rcdevice_record_sleep_record">睡眠记录</string>
+
+    <string name="rcdevice_record_breakFast">早餐</string>
+    <string name="rcdevice_record_lunch">午餐</string>
+    <string name="rcdevice_record_dinner">晚餐</string>
+    <string name="rcdevice_record_snacks">加餐</string>
+    <string name="rcdevice_record_release">发布</string>
+    <string name="rcdevice_record_upload_image">图片上传中</string>
+    <string name="rcdevice_record_upload_image_error">图片上传失败，请重试</string>
+    <string name="rcdevice_record_release_hint">此时此刻,想和大家分享什么?</string>
+    <string name="step">步</string>
+    <string name="km">公里</string>
+    <string name="consume_unit">Kcal</string>
+    <string name="day_ri">日</string>
+    <string name="today">今天</string>
+    <string name="step_chart_unit">单位: 步</string>
+    <string name="day_tian">天</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="this_week">本周</string>
+    <string name="this_month">本月</string>
+
+    <!--高血压专题-->
+    <string name="high_blood_pressure">高血压专题</string>
+    <string name="high_blood_pressure_details_introduce">高血压大数据联合实验室&amp;瑰柏科技</string>
+    <string name="high_blood_pressure_professor_introduce">专家介绍</string>
+    <string name="high_blood_pressure_consult_professor">咨询专家组</string>
+    <string name="high_blood_pressure_consult_professor_stop">结束本次咨询</string>
+    <string name="high_blood_pressure_consult_professor_already_stop">本次咨询已结束</string>
+    <string name="high_blood_pressure_consult_professor_edit_hint">请填写症状描述、治疗经过、检查情况等</string>
+</resources>

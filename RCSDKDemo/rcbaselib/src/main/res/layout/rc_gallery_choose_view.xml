@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.rocedar.lib.base.view.RCGridViewForScrollView
+        android:id="@+id/rc_gallery_choose_view_grid"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"/>
+
+</LinearLayout>

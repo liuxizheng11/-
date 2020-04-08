@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_fd_evaluate_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_item_fd_evaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="#999999"
+            android:textSize="12dp" />
+
+        <com.rocedar.sdk.familydoctor.view.RCMyRatingBar
+            android:id="@+id/ratingbar_item_doctor_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/tv_item_fd_evaluate_name"
+            app:rc_clickable="false"
+            app:rc_halfstart="true"
+            app:rc_starCount="5"
+            app:rc_starEmpty="@mipmap/rc_fd_ic_star_big_gray"
+            app:rc_starFill="@mipmap/rc_fd_ic_star_big_orang"
+            app:rc_starHalf="@mipmap/rc_fd_ic_star_small_half"
+            app:rc_starImageHeight="11dp"
+            app:rc_starImagePadding="2.5dp"
+            app:rc_starImageWidth="11dp" />
+
+        <TextView
+            android:id="@+id/tv_item_doctor_evaluate_star_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ratingbar_item_doctor_evaluate"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@+id/ratingbar_item_doctor_evaluate"
+            android:gravity="left"
+            android:text="5.0"
+            android:textColor="#ffa820"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_item_fd_evaluate_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_fd_evaluate_name"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="@dimen/rc_edit_line_padding"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_item_fd_evaluate_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_fd_evaluate_desc"
+            android:layout_marginTop="8dp"
+            android:text="接诊医生："
+            android:textColor="#999999"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_item_fd_evaluate_doctor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_item_fd_evaluate_doctor"
+            android:layout_toRightOf="@+id/tv_item_fd_evaluate_doctor"
+            android:textColor="#666666"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_item_fd_evaluate_container"
+        android:layout_marginTop="10dp"
+        android:background="#f3f4f9" />
+</RelativeLayout>

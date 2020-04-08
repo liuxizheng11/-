@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rc_line"
+    android:orientation="vertical">
+
+    <include layout="@layout/rc_include_top_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/rc_white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rc_fragment_health_calss_search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@+id/rc_fragment_health_calss_search_cancle"
+            android:background="@drawable/rc_bg_health_search"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/rc_fragment_health_calss_search_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableLeft="@mipmap/rc_ic_health_find"
+                android:drawablePadding="11dp"
+                android:hint="@string/rc_health_search"
+                android:textColor="@color/rc_text_color_light"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rc_fragment_health_calss_search_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/rc_cancle"
+            android:textColor="@color/rc_text_color"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0" />
+
+    <ListView
+        android:id="@+id/rc_fragment_health_calss_search_list"
+        style="@style/RC_Base_ListViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rc_white"
+        android:divider="@color/rc_line"
+        android:dividerHeight="1px" />
+
+    <TextView
+        android:id="@+id/rc_fragment_health_calss_search_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:drawablePadding="51dp"
+        android:drawableTop="@mipmap/rc_ic_search_nodata"
+        android:gravity="center_horizontal"
+        android:text="@string/rc_search_no_data"
+        android:textColor="@color/rc_text_color_light"
+        android:textSize="15dp"
+        android:visibility="gone" />
+</LinearLayout>

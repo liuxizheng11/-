@@ -1,0 +1,31 @@
+分享使用需要注意的地方
+
+1.QQ分享需要在配置文件中添加以下内容，否则回调会失败, 需要将<appid>替换为申请的ID
+    <!-- QQ 分享 -->
+    <activity
+        android:name="com.umeng.qq.tencent.AuthActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="tencent<appid>" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.umeng.qq.tencent.AssistActivity"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:configChanges="orientation|keyboardHidden|screenSize"/>
+2.微信分享需要在app包路径下添加wxapi，拷贝WXEntryActivity文件
+3.友盟的KEY需要在AndroidManifest.xml文件中配置
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="**" />
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="**" />
+4.微信和QQ的KEY需要在shareConfig中配置

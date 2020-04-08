@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rocedar.sdk.shop">
+
+    <!-- 网络-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 写入扩展存储，向扩展卡写入数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".app.order.MyOrderFormMainActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".app.order.MyOrderFromRefundActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <activity android:name=".app.PayWebViewActivity" />
+
+        <activity android:name=".app.goods.ServerGoodsCardActivity" />
+
+        <activity android:name=".app.goods.ServerGoodsListActivity" />
+
+        <activity android:name=".app.goods.ServerGoodsUserChooseActivity" />
+        <activity android:name=".app.goods.ServerGoodsOrderParticularsActivity" />
+        <activity android:name=".app.goods.ServerGoodsRenewActivity" />
+
+    </application>
+</manifest>
