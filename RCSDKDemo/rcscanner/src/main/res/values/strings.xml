@@ -1,9 +1,0 @@
-<resources>
-
-    <string name="rc_scan_result">扫描结果</string>
-    <string name="rc_scan_isbind">您是要绑定设备吗？</string>
-    <string name="rc_scan_cancel_bind">不是,返回</string>
-    <string name="rc_scan_bind">是,去绑定</string>
-    <string name="rc_scan">扫一扫</string>
-    <string name="rc_scan_photo_album">相册</string>
-</resources>
